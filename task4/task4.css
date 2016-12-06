@@ -1,0 +1,121 @@
+
+
+
+/*以下为字体自适应，根据不同屏幕宽度确定字体大小*/
+
+html {font-size:62.5%}
+
+
+
+
+
+
+
+.body{
+		background-color: rgb(239,240,244);
+		margin: 0px;
+		
+	}
+	.header{
+		padding-top: 3.8%;
+		padding-bottom: 3.8%;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		color:white;
+		font-size: 1.6rem;
+
+		background-color: rgb(95,192,205);	
+		border: none;
+	}
+	.p1{
+		color:white;
+		font-size: 1.42rem;
+		float: left;
+		margin-left: 4%;
+	}
+	.p2{
+		color:white;
+		font-size: 1.42rem;
+		float: right;
+		margin-right: 4%;
+	}
+
+    .form{
+			width: 100%;
+		}
+		.fom-div-1{
+			display: table;
+
+			display: flex;
+			align-items: center;
+		padding-top: 3.4%;
+		padding-bottom: 3.4%;
+		
+		background-color: white;
+
+		overflow:hidden;
+        width: 100%;
+
+		}
+		
+		
+		.display
+		{
+			display: table-cell;
+			vertical-align: middle;
+			padding-left:6%;
+			width:16%;
+		}
+
+
+		.fom-img-1{
+		  width: 100%;
+		  height: auto;
+
+		}
+		.fom-input-1{
+			display: table-cell;
+			
+			
+			width: 100%;
+			overflow: hidden;
+			
+			border: none;
+			color: rgb(225,229,231);
+			font-size: 1.42rem;
+
+		}
+		
+		.password{
+			position: absolute;
+			top: 24px;
+			left: 150px;
+			width: 100%;
+			height:20px;
+			overflow:hidden;
+			color: rgb(225,229,231);
+			font-size: 1.42rem;
+		}
+		.p3{
+		color:rgb(95,192,205);
+		font-size: 1.42rem;
+		float: right;
+		margin-right: 4%;
+	}
+
+
+
+/* 下方代码是为了更改placeholder的文本颜色 */
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color:rgb(225,229,231); 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color:rgb(225,229,231); 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color:rgb(225,229,231); 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color:rgb(225,229,231); 
+} 
