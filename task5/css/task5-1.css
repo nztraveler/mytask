@@ -1,0 +1,215 @@
+/*以下为字体自适应，根据不同屏幕宽度确定字体大小*/
+.html {
+    font-size: 22.5px;
+}
+
+@media screen  and (max-width: 479px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 719px) {
+    html {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width: 720px)  {
+    html {
+        font-size: 22.5px
+    }
+}
+/*字体自适应结束*/
+
+body {
+    min-width: 320px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.hd {
+    position: relative;
+    width: 100%;
+    padding: 3.5% 0;
+    font-size: 1.6rem;
+    line-height: 1.65rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(95, 192, 205);
+}
+
+.hd img {
+    position: absolute;
+    left: 0;
+    padding-left: 4.8%;
+    height: 1.65rem;
+    width: auto;
+}
+
+/*人员头像信息块属性*/
+.banner {
+    width: 100%;
+    padding: 11.1% 0;
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24%;
+    margin: 0 5.5% 0 4.1%;
+    padding: 12% 0;
+    border-radius: 50%;
+    background:  url(../images/img-people.png) center white no-repeat;
+    background-size: contain;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bg-fs1 {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.bg-fs2 {
+    font-size: 1.07rem;
+    color: white;
+}
+
+.bg-fs2 img {
+    width: .8rem;
+}
+
+/*表格属性*/
+.bg-color {
+    box-sizing: border-box;
+    padding-left:4.1% ;
+    background: white repeat;
+}
+
+.container {
+    padding: 1.55rem 0;
+}
+
+.line1 {
+    float: left;
+    width: .133rem;
+    height: 1.15rem;
+    background-color: rgb(95, 192, 205);
+    border-radius: .044rem .044rem;
+}
+
+.p {
+    padding-left: 4.1%;
+    line-height: 1.15rem;
+    font-size: 1.42rem;
+    color: rgb(41, 51, 51);
+}
+
+/*表格属性*/
+
+.table {
+    font-size: 1.42rem;
+}
+
+.tr {
+
+    border-top: 1px solid rgb(225, 229, 231);
+    border-bottom: 1px solid rgb(225, 229, 231);
+    padding: 1.6rem 0;
+}
+
+.tr2 {
+    border-top: 1px solid rgb(225, 229, 231);
+    border-bottom: 1px solid rgb(225, 229, 231);
+    padding: 1rem 0;
+}
+
+
+
+.td1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    padding-left: 4.1%;
+    padding-right: 4.1%;
+}
+.td1 span{
+    font-size: 1.42rem;
+}
+
+.line2 {
+    width: .133rem;
+    height: 1.15rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(225, 229, 231);
+
+}
+
+.td2 {
+    padding-left: 4.1%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 55%;
+}
+
+.td3 {
+    width: 61%;
+    padding-left: 3.2%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fs1 {
+    font-size: 1.42rem;
+    color: rgb(153, 153, 153);
+}
+
+.fs2 {
+    font-size: 1.42rem;
+    color: rgb(226, 97, 99);
+}
+
+.fs3 {
+    font-size: 1.24rem;
+    color: rgb(51, 51, 51);
+}
+
+.button {
+    text-align: center;
+}
+
+.button-b1 {
+    width: 43%;
+    height: 4rem;
+    outline: none;
+    border: .12rem solid rgb(95, 192, 205);
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.5rem;
+    color: rgb(95, 192, 205);
+
+}
+
+.button-b2 {
+    width: 43%;
+    height: 4rem;
+    outline: none;
+    border: .12rem solid rgb(95, 192, 205);
+    border-radius: 10px;
+    background-color: rgb(95, 192, 205);
+    font-size: 1.5rem;
+    color: white;
+}

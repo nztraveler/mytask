@@ -1,0 +1,248 @@
+html {
+    font-size: 22.5px;
+    font-family: "Microsoft YaHei", serif;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 479px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 719px) {
+    html {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width: 720px) {
+    html {
+        font-size: 22.5px
+    }
+}
+
+/*媒体查询结束*/
+
+body {
+    min-width: 320px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.fs-34px {
+    font-size: 1.51rem;
+}
+
+.fs-30px {
+    font-size: 1.33rem;
+}
+
+.fs-28px {
+    font-size: 1.24rem;
+}
+
+.fs-26px {
+    font-size: 1.15rem;
+}
+
+.fs-20px {
+    font-size: .89rem;
+}
+
+/*header部分*/
+.header-table {
+    position: relative;
+    width: 100%;
+    display: table;
+    margin: auto;
+    background-color: rgb(95, 192, 205);
+}
+
+.header-tablecell {
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header-tablecell span {
+    display: inline-block;
+    padding: .65rem 1.3rem;
+    font-size: 1.51rem;
+    border-radius: .444rem;
+}
+
+.mf {
+    margin-left: -.8rem;
+}
+
+.color1 {
+    color: rgb(95, 192, 205);
+    background-color: white;
+}
+
+.color2 {
+    color: white;
+    background-color: rgb(85, 168, 179);
+}
+
+.header-tablecell-absoutle {
+    position: absolute;
+    right: 4.16%;
+    width: 6.1%;
+    height: 100%;
+}
+
+.header-tablecell-absoutle .icon {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center;
+    background-image: url(../images/形状2.png);
+    background-size: contain;
+}
+
+select {
+    /*很关键：将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../images/形状1.svg") no-repeat scroll 95% center transparent;
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    font-size: 1.24rem;
+    color: rgb(153, 153, 153);
+    width: 33.333333333333333333333%;
+    outline: none;
+}
+
+.select1 {
+    border: solid 1px rgb(225, 229, 231);
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.select2 {
+    border: solid 1px rgb(225, 229, 231);
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.select3 {
+    border: solid 1px rgb(225, 229, 231);
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.warp {
+    padding-bottom: 15%;
+}
+
+.container {
+    padding-left: 4.2%;
+    padding-right: 4.2%;
+    border: solid 1px rgb(225, 229, 231);
+}
+
+.fl {
+    float: right;
+
+}
+
+.col1 {
+    color: rgb(153, 153, 153);
+}
+
+.col2 {
+    color: rgb(51, 51, 51);
+    vertical-align: top;
+}
+
+.col3 {
+    color: rgb(230, 59, 14);
+}
+span a {
+    line-height: 1.1em;
+    vertical-align: middle;
+}
+a img{
+    height: 1.1em;
+}
+footer {
+    width: 100%;
+    min-width: 320px;
+    max-width: 720px;
+    margin: 0;
+    display: table;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 250, 251);
+    position: fixed;
+    bottom: 0;
+    border-bottom: none;
+    border-top: none;
+
+}
+
+.bg-circle {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 16%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    border-radius: 50%;
+    background-color: rgb(95, 192, 205);
+}
+
+.bg-circle-icon {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 42%;
+    height: 42%;
+
+    background-image: url(../images/writing.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.float1 {
+    display: table-cell;
+    text-align: center;
+    width: 42%;
+
+}
+
+.float2 {
+    display: table-cell;
+    width: 42%;
+    text-align: center;
+
+}
+
+.img {
+    width: 15%;
+}
+
+.margin {
+    margin: 0;
+}
