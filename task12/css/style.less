@@ -1,0 +1,274 @@
+
+@width20: 20%;
+@width25: 25%;
+@width50: 50%;
+@width100: 100%;
+
+@color1: #333333;
+@color2: #FFFFFF;
+@color3: #CCCCCC;
+@color4: #FF7F02;
+@color5: #1D7AD9;
+@color6: #E8E8E8;
+@color7: #FBFCFF;
+@color8: #F3F3F3;
+@color9: #666666;
+@color10: #D6D6D6;
+@color11: #999999;
+@color12: #E15053;
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.po-l{
+  position: relative;
+}
+.padding-lr (@length: 15px) {
+  padding-left: @length;
+  padding-right: @length;
+}
+.padding-tb(@length: 28px){
+  padding-top: @length;
+  padding-bottom: @length;
+}
+@media screen and (min-width:320px) and (max-width:430px) {
+  .col-hu-6 {
+    width: @width50;
+  }
+
+  .col-hu-12 {
+    width: @width100;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width:320px) and (max-width:385px){
+    .col-hu-xs-12{
+      width: @width100;
+    }
+  }
+
+@media screen and (min-width:700px) and (max-width:767px){
+    .col-hu-3{
+      .padding-lr ;
+      .fl;
+      width: @width25;
+      .po-l;
+      min-height: 1px;
+      box-sizing: border-box;
+    }
+  }
+@media screen and (min-width:320px) and (max-width:699px){
+  .col-hu-3{
+    width: auto;
+    .fl;
+    .padding-lr ;
+    .po-l;
+    min-height: 1px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width:992px){
+  .col-hu-2{
+    width: @width20;
+    .fl;
+    .po-l;
+    .padding-lr ;
+    min-height: 1px;
+    box-sizing: border-box;
+  }
+}
+
+body{
+  min-width: 320px;
+}
+
+.ul1 {
+  li{
+    margin-left:60px;
+    .padding-lr (@length: 18px);
+    line-height: 50px;
+    font-size: 16px;
+    color: @color1;
+    border-radius: 4px;
+    background-color: @color2;
+  }
+}
+/**步骤导航开始**/
+.ul2 {
+  text-align: center;
+  font-size: 0;
+  list-style: none;
+  margin: 35px 0;
+  padding: 0;
+  overflow: hidden;
+  li{
+    margin-top: 5px;
+    display: inline-block;
+    width: 162px;
+    text-align: center;
+  }
+}
+.line1 {
+  display: inline-block;
+  width: 69px;
+  height: 5px;
+  background-color: @color3;
+}
+.round1 {
+  display: inline-block;
+  width: 24px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: bold;
+  color: @color2;
+  background-color: @color3;
+  border-radius: 50%;
+}
+.p2 {
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  color: @color3;
+}
+.bgcolor-orange {
+  background-color: @color4;
+}
+.color-orange{
+  color: @color4;
+}
+/**步骤导航结束**/
+.p3 {
+  font-size: 22px;
+  color: @color1;
+  line-height: 22px;
+  margin-bottom: 18px;
+  span{
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    vertical-align: top;
+    border-radius: 1px 2px;
+    background-color: @color5;
+  }
+}
+
+/**纸箱定制开始**/
+.border {
+  border: solid 1px @color6;
+}
+.form1 {
+  overflow: hidden;
+  background-color: @color7;
+  border: solid 1px @color6;
+}
+.p4 {
+  padding: 15px;
+  width: @width100;
+  box-sizing: border-box;
+  font-size: 18px;
+  color:@color5;
+  background-color: @color8;
+}
+.form1  {
+  label{
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    color: @color9;
+    margin-bottom: 0;
+  }
+}
+.p-28{
+  .padding-tb(@length: 28px)
+}
+.p-bottom-13{
+  padding-bottom: 13px;
+  width: @width100;
+}
+.p-top-13{
+  padding-top: 13px;
+  width: @width100;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+
+  +span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+  vertical-align: text-top;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: solid @color10 1px;
+}
+  :checked + span {
+    border: solid @color5 6px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:535px){
+  .full-width{
+    width: @width100;
+    display: inline-block;
+  }
+}
+.select1 {
+  float: right;
+  margin: 25px 5px 25px 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 12px 54px 12px 18px;
+  border: solid 1px @color6;
+  font-size: 14px;
+  line-height: 14px;
+  color: @color11;
+  outline: none;
+  background: url("../images/icon1.png") no-repeat scroll 100px center transparent;
+}
+
+input[type="number"] {
+  width: 70px;
+  height: 28px;
+  padding: 0;
+  text-align: center;
+  border: solid 1px @color6;
+}
+
+.btn5 {
+  display: block;
+  margin: 140px auto 96px auto;
+  width: 180px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 24px;
+  color: @color2;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: @color12;
+}
+/**纸箱定制结束**/
+/**媒体查询字体开始**/
+@media screen and (min-width:320px) and (max-width:758px){
+  .p3{
+    font-size: 16px;
+  }
+  .form1 label{
+    font-size: 16px;
+  }
+  .btn5{
+    margin: 80px auto 80px auto;
+    width: 160px;
+    font-size: 20px;
+  }
+}
+/**媒体查询字体结束**/

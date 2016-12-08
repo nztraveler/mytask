@@ -1,0 +1,224 @@
+html {
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 320px;
+    font-size: 20px;
+    font-family: serif,"Microsoft YaHei";
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    html {
+        font-size: 12px;
+    }
+}
+ 
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px;
+    }
+}
+ 
+@media screen and (min-width:640px) and (max-width:719px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:720px) and (max-width:800px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+
+body{
+margin: 0;
+}
+
+.bg{
+    width: 100%;
+  margin: 0;
+  background-color: rgb(41,189,224); 
+}
+
+.icon4{ background-image: url(../images/CssGaga.png);
+  background-position: 0 0; background-size: 400% ;}
+.icon5{ background-image: url(../images/CssGaga.png);
+  background-position: 33% 0; background-size: 400% ;}
+.icon6{ background-image: url(../images/CssGaga.png);
+  background-position: 68% 0; background-size: 400% ;}
+.icon7{ background-image: url(../images/CssGaga.png);
+  background-position: 100% 0; background-size: 400% ;}
+
+
+header{
+  width: 100%;
+  padding: 2% 0;
+  display: table;
+}
+
+header .icon1{
+  display: table-cell;
+  width: 14%;
+  padding: 3.12% 0;
+  background-image: url(../images/icon1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.tablecell{
+  display: table-cell;
+  width: 72%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.7rem;
+  color: white;
+}
+header .icon2{
+  display: table-cell;
+  width: 14%;
+  background-image: url(../images/icon2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+
+
+.main{
+position: relative;
+width: 100%;
+background-color: rgb(185,233,245); 
+}
+
+.main p{
+  font-size: 1.3rem;
+  color: rgb(70,70,70);
+  padding: 4.6% 0 4.6% 7.2%;
+  margin: 0;
+}
+
+
+button{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2.65%;
+  margin: auto;
+      background: transparent;
+      border: none;
+    cursor: pointer;
+    outline: none;
+}
+.circle{
+position: relative;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: rgb(251,180,53);
+}
+.triangle-right{
+  position: absolute;
+  left: .9rem;
+  top: .65rem;
+  border-left: 1.25rem solid white;
+  border-top: .625rem solid transparent;
+  border-bottom: .625rem solid transparent;
+}
+
+.triangle-botom{
+  width: 0;
+  margin-left: 11%;
+  border-top: .75rem solid rgb(185,233,245);
+  border-left: .375rem solid transparent;
+  border-right: .375rem solid transparent;
+}
+
+.p1{
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 11%;
+}
+
+.vote{
+  overflow: hidden;
+}
+
+
+.container{
+float: left;
+width: 22%;
+margin-left: 8.5%;
+}
+.card{
+  width: 100%;
+  border: 0.25rem solid white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.p2{
+  margin: 0;
+  padding: 28% 0;
+font-size: 1.5rem;
+line-height: 1.5rem;
+color: rgb(86,86,86);
+background-color: rgb(245,201,123);
+}
+.p3{
+  margin: 0;
+  line-height: 1.25rem;
+  font-size: 1.135rem;
+color: rgb(225,225,225);
+background-color: rgb(131,176,154);
+}
+
+ul{
+  width: 100%;
+  padding: 16% 0;
+  margin:0 0 25% ;
+  opacity: 0;
+}
+
+.container:hover ul{opacity: 1;}
+
+
+li{
+    float: left;
+    width: 23%;
+    padding: 11.5% 0;
+    margin-right: 2.6%;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-color: white;
+
+}
+
+ul .icon7{
+  margin: 0;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 800px;
+  padding: 3% 0;
+  border-top: solid 1px white;
+  text-align: center;
+  background-color: rgb(41,189,224);
+}
+
+.footer{
+  width: 80%;
+  padding: 3% 0;
+  margin: 0 10%;
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(251,180,53);
+}
+
+a{
+  text-decoration:none;
+}

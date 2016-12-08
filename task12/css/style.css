@@ -1,0 +1,238 @@
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.po-l {
+  position: relative;
+}
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .col-hu-6 {
+    width: 50%;
+  }
+  .col-hu-12 {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 385px) {
+  .col-hu-xs-12 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  .col-hu-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 699px) {
+  .col-hu-3 {
+    width: auto;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col-hu-2 {
+    width: 20%;
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 1px;
+    box-sizing: border-box;
+  }
+}
+body {
+  min-width: 320px;
+}
+.ul1 li {
+  margin-left: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333333;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+/**步骤导航开始**/
+.ul2 {
+  text-align: center;
+  font-size: 0;
+  list-style: none;
+  margin: 35px 0;
+  padding: 0;
+  overflow: hidden;
+}
+.ul2 li {
+  margin-top: 5px;
+  display: inline-block;
+  width: 162px;
+  text-align: center;
+}
+.line1 {
+  display: inline-block;
+  width: 69px;
+  height: 5px;
+  background-color: #CCCCCC;
+}
+.round1 {
+  display: inline-block;
+  width: 24px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+}
+.p2 {
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  color: #CCCCCC;
+}
+.bgcolor-orange {
+  background-color: #FF7F02;
+}
+.color-orange {
+  color: #FF7F02;
+}
+/**步骤导航结束**/
+.p3 {
+  font-size: 22px;
+  color: #333333;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+.p3 span {
+  display: inline-block;
+  width: 4px;
+  height: 22px;
+  vertical-align: top;
+  border-radius: 1px 2px;
+  background-color: #1D7AD9;
+}
+/**纸箱定制开始**/
+.border {
+  border: solid 1px #E8E8E8;
+}
+.form1 {
+  overflow: hidden;
+  background-color: #FBFCFF;
+  border: solid 1px #E8E8E8;
+}
+.p4 {
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #1D7AD9;
+  background-color: #F3F3F3;
+}
+.form1 label {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+  margin-bottom: 0;
+}
+.p-28 {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.p-bottom-13 {
+  padding-bottom: 13px;
+  width: 100%;
+}
+.p-top-13 {
+  padding-top: 13px;
+  width: 100%;
+}
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+input[type="radio"] + span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+  vertical-align: text-top;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: solid #D6D6D6 1px;
+}
+input[type="radio"] :checked + span {
+  border: solid #1D7AD9 6px;
+}
+@media screen and (min-width: 320px) and (max-width: 535px) {
+  .full-width {
+    width: 100%;
+    display: inline-block;
+  }
+}
+.select1 {
+  float: right;
+  margin: 25px 5px 25px 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 12px 54px 12px 18px;
+  border: solid 1px #E8E8E8;
+  font-size: 14px;
+  line-height: 14px;
+  color: #999999;
+  outline: none;
+  background: url("../images/icon1.png") no-repeat scroll 100px center transparent;
+}
+input[type="number"] {
+  width: 70px;
+  height: 28px;
+  padding: 0;
+  text-align: center;
+  border: solid 1px #E8E8E8;
+}
+.btn5 {
+  display: block;
+  margin: 140px auto 96px auto;
+  width: 180px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #E15053;
+}
+/**纸箱定制结束**/
+/**媒体查询字体开始**/
+@media screen and (min-width: 320px) and (max-width: 758px) {
+  .p3 {
+    font-size: 16px;
+  }
+  .form1 label {
+    font-size: 16px;
+  }
+  .btn5 {
+    margin: 80px auto 80px auto;
+    width: 160px;
+    font-size: 20px;
+  }
+}
+/**媒体查询字体结束**/

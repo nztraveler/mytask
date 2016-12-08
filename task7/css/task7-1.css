@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    font-family: "Microsoft YaHei" ,serif;
+
+}
+
+
+
+      .wrap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1920px;
+      min-width: 1330px;
+      height: 435px;
+      margin: 0 auto;
+    }
+    .carousel {
+      position: absolute;
+      transition: all 0.5s ease-in 0s;
+    }
+    .carousel div {
+      float: left;
+      text-align: center;
+    }
+   .carousel img {
+      width: 100%;
+      height: 435px;
+    }
+
+
+
+button{
+  z-index: 100;
+  background-color: transparent;
+  border:none;
+  outline: none;
+}
+
+.wrap button:hover{
+  cursor: pointer; 
+}
+
+.pre{
+position: absolute;
+top: 194px;
+left: 8%;
+width: 27px;
+height: 46px;
+background-image: url(../images/CssGaga1.png);
+background-position: -91px -57px;
+}
+
+.next{
+position: absolute;
+right: 8%;
+top: 194px;
+width: 27px;
+height: 47px;
+background-image: url(../images/CssGaga1.png);
+background-position: -62px -57px;
+}
+
+.main1{
+  width: 100%;
+  background-color: rgb(250,250,250);
+  padding-top: 135px;
+  overflow:hidden; 
+}
+.main2{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.inner1{
+  float: left;
+  width: 224px;
+  height: 241px;
+text-align: center;
+}
+
+.icon6{
+  
+  display: inline-block;
+width: 43px;
+height: 62px;
+
+background-image: url(../images/CssGaga1.png);
+background-position: 0px 0px;
+}
+
+.p2{
+text-align: center;
+      font-size: 18px;
+    line-height: 82px;
+    color: rgb(51,51,51);
+}
+
+.p3{
+   text-align: left;
+      font-size: 16px;
+    color: rgb(153,153,153);
+}
+
+.inner2{
+  float: left;
+  width: 226px;
+  height: 241px;
+  padding: 14px 82px 0 107px ;
+text-align: center;
+}
+
+.icon7{
+  
+  display: inline-block;
+width: 60px;
+height: 48px;
+
+background-image: url(../images/CssGaga1.png);
+background-position: 0px -64px;
+}
+
+.inner3{
+  float: left;
+  width: 258px;
+  height: 241px;
+  padding: 7px ;
+text-align: center;
+}
+
+.icon8{
+  
+  display: inline-block;
+width: 52px;
+height: 55px;
+
+background-image: url(../images/CssGaga1.png);
+background-position: -45px 0;
+}
+
+.inner4{
+  float: left;
+height: 201px;
+  padding: 62px 0 0 56px;
+  margin-left: 44px;
+  border-left: dashed 1px rgb(222,222,222);
+}
+
+.icon9{
+  display: inline-block;
+width: 13px;
+height: 13px;
+background-image: url(../images/CssGaga1.png);
+background-position: -147px 0;
+}
+
+.p4{
+ 
+      font-size: 18px;
+    color: rgb(38,162,111);
+}
+.p5{
+        font-size: 18px;
+    color: rgb(153,153,153);
+    padding-bottom: 35px;
+}
+
+.main2-1{
+padding-top: 340px;
+text-align: center;
+}
+
+.ul3 li{
+  float: left;
+  width: 330px;
+  padding: 50px 0;
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+.ul3 .li-1{
+float: left;
+  width: 210px;
+list-style: none;
+display: flex;
+align-items: center;
+}
+.li-1 .p6{
+  width: 118px;
+}
+
+.round{
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: solid 1px rgb(227,227,227);
+  text-align: center;
+  line-height: 72px;
+  background-color: white;
+}
+
+.p6{
+  display: inline-block;
+  width: 160px;
+  padding-left: 16px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: .7px;
+  color: rgb(153,153,153);
+}
+
+.icon10{
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  margin: 0 24px;
+  background-image: url(../images/CssGaga1.png);
+  background-position: -99px 0;
+}
+
+.container2-2{
+  overflow: hidden;
+}
+ .inner5{
+  float: left;
+   text-align: center;
+  width: 271px;
+  height: 370px;
+  margin-right: 38px;
+  background-color: white;
+  box-shadow: 0 0 3px rgb(226,226,226);
+ }
+
+  .round2{
+  width: 110px;
+  height: 110px;
+  margin: 20px auto;
+   border-radius: 50%;
+   background-image: url(../images/person1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+
+  .round3{
+  width: 110px;
+  height: 110px;
+  margin: 20px auto;
+   border-radius: 50%;
+   background-image: url(../images/person2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+   .round4{
+  width: 110px;
+  height: 110px;
+  margin: 20px auto;
+   border-radius: 50%;
+      background-image: url(../images/person3.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+   .round5{
+  width: 110px;
+  height: 110px;
+  margin: 20px auto;
+   border-radius: 50%;
+   background-image: url(../images/person4.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+ .p7{
+  width: 205px;
+  margin: 0 auto;
+   text-align: left;
+      font-size: 16px;
+        letter-spacing: .7px;
+    color: rgb(153,153,153);
+}
+
+.inner5-2
+{
+  margin-right: 0;
+}
+
+.ul1{
+  overflow: hidden;
+ list-style: none;
+  margin: 22px auto 90px auto;
+  width: 88px;
+}
+
+.round6{
+  display: inline-block;
+  margin: 0 3px 0 0 ;
+  padding: 0;
+
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: rgb(41,176,120);
+  box-shadow: 0 0 2px rgb(226,226,226);
+}
+
+.round7{
+  display: inline-block;
+  margin: 0 3px 0 0 ;
+  padding: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 2px rgb(226,226,226);
+}
+
+.container2-3{
+margin: 40px 0 90px 0;
+overflow: hidden;
+}
+
+
+.container2-3-1{
+  position: relative;
+  float: left;
+  width: 240px;
+  height:176px;
+
+  vertical-align: middle;
+  background-color: white;
+    box-shadow: 0 0 3px rgb(226,226,226);
+}
+
+.co1{
+  width: 184px;
+  height: 176px;
+  margin: 0 auto;
+  background-image: url(../images/CssGaga2.png);
+  background-position: 0 -4px;
+}
+
+.co2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 55px;
+  height: 60px;
+  margin: auto;
+  background-image: url(../images/CssGaga2.png);
+  background-position: -126px -186px;
+}
+
+.co3{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    margin: auto;
+  width: 134px;
+  height: 69px;
+
+  background-image: url(../images/CssGaga2.png);
+  background-position: 0 -312px;
+}
+
+.co4{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    margin: auto;
+  width: 175px;
+  height: 65px;
+
+  background-image: url(../images/CssGaga2.png);
+  background-position: 0 -383px;
+}
+
+.co5{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 124px;
+  height: 124px;
+
+  background-image: url(../images/CssGaga2.png);
+  background-position: 0 -186px;
+}

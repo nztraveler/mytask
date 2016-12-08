@@ -1,0 +1,208 @@
+/*header部分开始*/
+
+body{
+  min-width: 1335px;
+  margin: 0 auto;
+}
+
+header{
+  width: 100%;
+
+}
+
+.header1{
+width: 1200px;
+margin: 0 auto;
+}
+
+.p1{
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(41,176,120);
+}
+
+.icon1{
+float: right;
+display: inline-block;
+width: 25px;
+height: 24px;
+margin: 8px 0 8px 20px;
+background-image: url(../images/CssGaga1.png);
+background-position: -120px -32px;
+
+}
+.icon2{
+float: right;
+display: inline-block;
+width: 25px;
+height: 24px;
+margin: 8px 0 8px 20px;
+background-image: url(../images/CssGaga1.png);
+background-position: -120px -58px;
+}
+.icon3{
+float: right;
+display: inline-block;
+width: 25px;
+height: 24px;
+margin: 8px 0 8px 20px;
+background-image: url(../images/CssGaga1.png);
+background-position: -120px -84px;
+}
+
+.header2{
+width: 100%;
+text-align: center;
+color: white;
+background-color: rgb(41,176,120);
+
+}
+.header2-1{
+ width: 1260px;
+ height: 100px;
+ margin: 0 auto;
+}
+.header2 a{
+  text-decoration: none;
+  color: white;
+}
+.header2 span{
+  float: right;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.header2 span:hover {
+    box-sizing: border-box;
+    border-bottom: solid 6px white;
+}
+/*header部分结束*/
+
+
+/*footer部分开始*/
+footer{
+  width: 100%;
+  background-color: rgb(39,162,111);
+}
+
+.footer1{
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+
+}
+
+.footer-ul{
+list-style: none;
+width: 1200px;
+margin: 0 auto;
+}
+
+.footer-ul li{
+    float: left;
+    padding: 0;
+list-style-type: disc;
+width: 120px;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgb(153,153,153);
+}
+
+
+
+.footer2{
+  position: relative;
+  width: 1200px;
+  height: 170px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: rgb(38,162,111);
+}
+
+.footer2-p1{
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  font-size: 16px;
+  color: white;
+}
+.footer2-p2{
+  position: absolute;
+  top: 122px;
+  left: 0px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer2-p3{
+  position: absolute;
+  top: 37px;
+  left: 364px;
+  font-size: 16px;
+  color: white;
+}
+
+.footer2-p4{
+  position: absolute;
+  top: 83px;
+  left: 364px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer2-p5{
+  position: absolute;
+  top: 83px;
+  left: 482px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer2-p6{
+  position: absolute;
+  top: 122px;
+  left: 364px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer2-p7{
+  position: absolute;
+  top: 122px;
+  left: 482px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer2-p8{
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+}
+.footer2-p8 span {
+  display: block;
+}
+
+.footer2-p8 img{
+  display: block;
+}
+
+.footer3{
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  line-height: 32px;
+  border-top: solid 1px rgb(50,192,134);
+  background-color: rgb(38,162,111);
+}
+
+
+/*footer部分结束*/

@@ -1,0 +1,257 @@
+@media screen and (min-width:320px) and (max-width:430px){
+    .col-hu-6{
+        width: 50%;
+    }
+    .col-hu-12{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width:320px) and (max-width:385px){
+    .col-hu-xs-12{
+        width: 100%;
+    }
+}
+@media screen and (min-width:700px) and (max-width:767px){
+    .col-hu-3{
+        width: 25%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (min-width:320px) and (max-width:699px){
+    .col-hu-3{
+        width: auto;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width:992px){
+    .col-hu-2{
+        width: 20%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+}
+
+body{
+    min-width: 320px;
+}
+
+.ul1 li{
+    margin-left:60px;
+    padding: 0 18px;
+    line-height: 50px;
+    font-size: 16px;
+    color: rgb(51,51,51);
+    border-radius: 4px;
+    background-color: white;
+}
+
+/**步骤导航开始**/
+
+.ul2 {
+    text-align: center;
+    font-size: 0;
+    list-style: none;
+    margin: 35px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ul2 li {
+    margin-top: 5px;
+    display: inline-block;
+    width: 162px;
+    text-align: center;
+}
+
+.line1 {
+    display: inline-block;
+    width: 69px;
+    height: 5px;
+    background-color: rgb(204, 204, 204);
+}
+
+.round1 {
+    display: inline-block;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(204, 204, 204);
+    border-radius: 50%;
+}
+
+.p2 {
+    margin: 20px 0 0 0;
+    font-size: 18px;
+    color: rgb(204, 204, 204);
+}
+
+.bgcolor-orange {
+    background-color: rgb(255, 127, 2);
+}
+.color-orange{
+    color: rgb(255, 127, 2);
+}
+/**步骤导航结束**/
+
+.p3 {
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+.p3 span {
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    vertical-align: top;
+    border-radius: 1px 2px;
+    background-color: rgb(29, 122, 217);
+}
+
+
+/**纸箱定制开始**/
+.border {
+    border: solid 1px rgb(232, 232, 232);
+}
+
+.form1 {
+    overflow: hidden;
+    background-color: rgb(251, 252, 255);
+    border: solid 1px rgb(232, 232, 232);
+}
+
+.p4 {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: rgb(29, 122, 217);
+    background-color: rgb(243, 243, 243);
+}
+
+.form1 label {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 0;
+}
+
+.p-28{
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+.p-bottom-13{
+    padding-bottom: 13px;
+    width: 100%;
+}
+.p-top-13{
+    padding-top: 13px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type="radio"] + span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+    vertical-align: text-top;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid rgb(214, 214, 214) 1px;
+}
+
+input[type="radio"]:checked + span {
+    border: solid rgb(29, 122, 217) 6px;
+}
+
+@media screen and (min-width:320px) and (max-width:535px){
+    .full-width{
+        width: 100%;
+        display: inline-block;
+    }
+}
+.select1 {
+    float: right;
+    margin: 25px 5px 25px 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 12px 54px 12px 18px;
+    border: solid 1px rgb(232, 232, 232);
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(153, 153, 153);
+    outline: none;
+    background: url("../images/icon1.png") no-repeat scroll 100px center transparent;
+}
+input[type="number"] {
+    width: 70px;
+    height: 28px;
+    padding: 0;
+    text-align: center;
+    border: solid 1px rgb(232, 232, 232);
+}
+
+/*.ruler {*/
+    /*margin-left: 55px;*/
+/*}*/
+
+
+
+.btn5 {
+    display: block;
+    margin: 140px auto 96px auto;
+    width: 180px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(225, 80, 83);
+}
+/**纸箱定制结束**/
+/**媒体查询字体开始**/
+@media screen and (min-width:320px) and (max-width:758px){
+    .p3{
+        font-size: 16px;
+    }
+    .form1 label{
+        font-size: 16px;
+    }
+    .btn5{
+        margin: 80px auto 80px auto;
+        width: 160px;
+        font-size: 20px;
+    }
+}
+/**媒体查询字体结束**/

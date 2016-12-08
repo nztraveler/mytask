@@ -1,0 +1,10 @@
+icon6.png, 43, 62, 0, 0
+icon8.png, 52, 55, 45, 0
+icon7.png, 60, 48, 0, 64
+icon5.png, 27, 47, 62, 57
+icon4.png, 27, 46, 91, 57
+icon10.png, 32, 30, 99, 0
+icon1.png, 25, 24, 120, 32
+icon2.png, 25, 24, 120, 58
+icon3.png, 25, 24, 120, 84
+icon9.png, 13, 13, 147, 0
