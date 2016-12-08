@@ -1,0 +1,74 @@
+*{
+    font-family: "Microsoft YaHei" , serif;
+}
+.wrap{
+    max-width: 640px;
+    min-width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #68CDD5;
+}
+header{
+    padding: 28px 18px;
+    text-align: center;
+    background-color: rgb(34,41,44);
+}
+img[src="images/arrow.png"]{
+    float: left;
+}
+img[src="images/ellipse.png"]{
+    float: right;
+    padding:13.5px 0;
+}
+.back{
+    float: left;
+    padding-left: 15px;
+    font-size: 26px;
+    line-height: 36px;
+    color: #f8f6f5;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    line-height: 36px;
+    color: #f8f6f5;
+}
+
+.img01 {
+    padding-top: 20px;
+    padding-left: 36px;
+
+}
+
+.img02 {
+    padding-top: 65px;
+    text-align: center;
+}
+
+.p1 {
+    width: 71%;
+    padding-top: 170px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height:54.22px;
+    color: white;
+}
+.icon{
+    width: 69%;
+    margin: 160px auto 200px auto;
+    overflow: hidden;
+}
+.img03 {
+    float: left;
+    text-align: center;
+}
+
+.img04 {
+    float: right;
+    text-align: center;
+}
+.p2 {
+    color: white;
+    font-size: 24px;
+}
