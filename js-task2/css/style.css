@@ -1,0 +1,38 @@
+body{
+    width: 640px;
+    margin: 0 auto;
+
+}
+.bgcolor{
+    background-color: rgb(240,240,240);
+}
+header{
+    font-size: 0;
+    background-color: rgb(41,189,224);
+    padding: 20px 17px 10px 17px;
+}
+header span{
+    display: inline-block;
+    width: 530px;
+    color: white;
+    font-size: 34px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+.play{
+    margin: 0 auto;
+    width: 607px;
+    background-color: rgb(251,251,251);
+}
+.title{
+    float: left;
+
+    width: 1em;
+    padding: ;
+
+    border-right: 1px solid #d9d9d9;
+
+
+}
+
