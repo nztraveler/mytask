@@ -1,8 +1,24 @@
+
 body{
     width: 640px;
     margin: 0 auto;
-
+    font-family: "SimHei";
 }
+ul,li,p,button,input{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
 .bgcolor{
     background-color: rgb(240,240,240);
 }
@@ -23,16 +39,123 @@ header span{
 .play{
     margin: 0 auto;
     width: 607px;
-    background-color: rgb(251,251,251);
+    background-color: #FBFBFB;
+    overflow: hidden;
 }
 .title{
     float: left;
-
     width: 1em;
-    padding: ;
-
+    font-size: 32px;
+    line-height: 37px;;
+    padding: 150px 50px 160px 40px;
     border-right: 1px solid #d9d9d9;
-
+    background-color:#fff;
+}
+.assign{
+    float: left;
+    padding-bottom: 39px;
+    width: 484px;
+    border-bottom: 1px solid #d9d9d9;
+    overflow: hidden;
+}
+.assign li{
+    float: left;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 40px 33px 0 33px;
+    width: 50%;
+    font-size: 26px;
+    letter-spacing: -.5px;
+    color: #a1a1a1;
 
 }
+.assign li>:first-child{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin:8px 25px 8px 0 ;
+    vertical-align: bottom;
+    background-color: #FAB344;
+}
+
+.play button{
+    float: left;
+    width: 484px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 60px;
+    color: #29bde0;
+}
+.background1{
+    margin: 9px auto 0 auto;
+    padding-bottom: 29px;
+    width: 607px;
+    background-color: #fff;
+}
+.background1 input{
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    font-size: 28px;
+    line-height: 85px;
+    border-bottom: 2px solid #f0f0f0;
+}
+.background1 p{
+    padding-left: 30px;
+    font-size: 28px;
+    line-height: 75px;
+    color: #444;
+}
+.background1 p span{
+    padding: 0 10px;
+    font-size: 34px;
+    color:#fab344 ;
+    background-color: #f4f5f5;
+}
+
+.minus{
+    display: inline-block;
+    width: 17px;
+    height: 4px;
+    padding: 11px 4.5px ;
+    border: 1px solid #d9d9d9;
+}
+.minus i{
+    display: block;
+    width: 17px;
+    height: 4px;
+    background-color: #fab344;
+}
+.plus{
+    display: inline-block;
+    padding: 4.5px 11px ;
+    border: 1px solid #d9d9d9;
+}
+.plus i{
+    position: relative;
+    display: block;
+    width: 4px;
+    height: 17px;
+    background-color: #fab344;
+}
+.plus i:before{
+    position: absolute;
+    content: "";
+    left: -6.5px;
+    top: 6.5px;
+    width: 17px;
+    height: 4px;
+    background-color: #fab344;
+}
+input[type="range"]{
+    display: inline-block;
+    width: 60px;
+    height: 36px;
+    background-image: url("../images/slider.png");
+}
+
+
+
+
+
 
