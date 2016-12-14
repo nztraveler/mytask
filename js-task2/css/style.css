@@ -20,6 +20,7 @@ button{
 }
 
 .bgcolor{
+    padding-bottom: 23px;
     background-color: rgb(240,240,240);
 }
 header{
@@ -92,7 +93,7 @@ header span{
     width: 607px;
     background-color: #fff;
 }
-.background1 input{
+.background1 input[type="text"]{
     display: block;
     margin: 0 auto;
     width: 550px;
@@ -106,19 +107,42 @@ header span{
     line-height: 75px;
     color: #444;
 }
-.background1 p span{
-    padding: 0 10px;
+/*清除number的上下箭头*/
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*修改placeholder颜色*/
+input[type=number]::-webkit-input-placeholder {
+    color: #fab344 ;
+}
+
+.background1 p input[type=number]{
+
+    width: 60px;
     font-size: 34px;
+    text-align: center;
     color:#fab344 ;
     background-color: #f4f5f5;
+}
+.number{
+    margin: 45px auto;
+    width: 507px;
+    font-size: 0px;
 }
 
 .minus{
     display: inline-block;
+    vertical-align: middle;
     width: 17px;
     height: 4px;
     padding: 11px 4.5px ;
     border: 1px solid #d9d9d9;
+
 }
 .minus i{
     display: block;
@@ -128,6 +152,7 @@ header span{
 }
 .plus{
     display: inline-block;
+    vertical-align: middle;
     padding: 4.5px 11px ;
     border: 1px solid #d9d9d9;
 }
@@ -147,15 +172,46 @@ header span{
     height: 4px;
     background-color: #fab344;
 }
-input[type="range"]{
+input[type=range]{
+    -webkit-appearance: none; /*必须要清除重置默认属性*/
     display: inline-block;
+    margin: 0 20px;
+    width: 410px;   /*轨道长度*/
+    height: 4px;    /*轨道宽度*/
+    background: -webkit-linear-gradient( #fab344, transparent) no-repeat;
+    background-size: 0% 100%;
+    /*background-color: #ffe6be;   !*改变轨道的颜色用背景色*!*/
+}
+/*修改滑块样式*/
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none; /*清除滑块默认样式*/
+    cursor: pointer;
     width: 60px;
     height: 36px;
     background-image: url("../images/slider.png");
 }
 
 
+.line{
+    position: absolute;
+    z-index: -1;
+    top: 130px;
+    left: 98px;
+    width: 410px;   /*轨道长度*/
+    height: 4px;    /*轨道宽度*/
+    background-color: #ffe6be;
+}
 
+.btn1{
+    margin: 20px auto 0 auto;
+    padding: 25px 0;
+    width: 607px;
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+    background-color: #fab344;
+}
 
 
 

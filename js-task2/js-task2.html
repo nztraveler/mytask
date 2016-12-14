@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/RangeSlider.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -33,15 +36,26 @@
     <input type="text" maxlength="10" placeholder="幽灵词组">
 </div>
 
-<div class="background1">
-    <p>玩家人数 <span>18</span> 人</p>
-    <div>
-        <span class="minus"><i></i></span>
-        <input type="range"  min="9" max="17" step="1"/>
-        <span class="plus" ><i></i></span>
+<div class="background1" style="position: relative;z-index:0;">
+    <span class="line"></span>
+    <p>玩家人数 <input type="number" id="num" value ="6" min="6" max="18" maxlength="2"/> 人</p>
+    <div class="number" >
+        <span  id="sub" class="minus"><i></i></span>
+        <input  type="range"  value="6" id="range" >
+        <script>
+            var change = function($input) {
+                /*内容可自行定义*/
+                console.log("123");
+            }
+
+            $('#range').RangeSlider({ min: 6,   max: 18,  step: 1, value:6, callback: change});
+
+        </script>
+        <span  id="add" class="plus" ><i></i></span>
     </div>
 </div>
-<button>去发牌</button>
+<button class="btn1" id="btn1">去发牌</button>
 </div>
 </body>
+<script type="text/javascript" src="js/js-task2.js"></script>
 </html>
