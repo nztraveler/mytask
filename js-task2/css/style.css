@@ -61,7 +61,7 @@ header span{
     overflow: hidden;
 }
 .assign li{
-    float: left;
+
     list-style: none;
     box-sizing: border-box;
     padding: 40px 33px 0 33px;
@@ -70,8 +70,17 @@ header span{
     letter-spacing: -.5px;
     color: #a1a1a1;
 }
-.assign li p{
-
+#x1,#y1{
+    width: 418px;
+    margin: 15px auto;
+}
+#x1 span,#y1 span{
+    display: inline-block;
+    width: 2em;
+    padding: 10px;
+    /*text-align: center;*/
+    font-size: 26px;
+    line-height: 30px;
 }
 .assign li>:first-child{
     display: inline-block;

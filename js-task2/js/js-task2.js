@@ -67,26 +67,27 @@ function assign() {
     switch (number) {
         case "6":
         case "7":
-            x = 2;
-            break;
         case "8":
+            x = 1;
+            break;
+
         case "9":
         case "10":
-            x = 3;
-            break;
         case "11":
-        case "12":
-            x = 4;
+            x = 2;
             break;
+
+        case "12":
         case "13":
         case "14":
         case "15":
-            x = 5;
+            x = 3;
             break;
+
         case "16":
         case "17":
         case "18":
-            x = 6;
+            x = 4;
             break;
 
         default:
@@ -147,23 +148,24 @@ function assign() {
     arr.shuffle();
     console.log(arr);
 
-// 添加dom节点，让arr的杀手部分显示。
+    // 每次点击按钮后重置div里面的内容，不然数据堆积
+    document.getElementById('x1').innerHTML=""
+    document.getElementById('y1').innerHTML=""
     for( var i=0; i<x; i++){
         //  var parent=document.getElementsByClassName('assign');
         // var child=document.getElementById("x1");
         // parent.removeChild(child);
 
-
-
-        var para=document.createElement("p");
+        var para=document.createElement("span");
         var node=document.createTextNode(arr[i]+"号");
         para.appendChild(node);
         document.getElementById('x1').appendChild(para)
+
     }
     console.log(arr);
 
     for( var i=x; i< TotalN; i++ ){
-        var para=document.createElement("p");
+        var para=document.createElement("span");
         var node=document.createTextNode(arr[i]+"号");
         para.appendChild(node);
         document.getElementById('y1').appendChild(para)
