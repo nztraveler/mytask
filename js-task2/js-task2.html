@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1，maximum-scale=1">
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/RangeSlider.js"></script>
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -27,8 +27,10 @@
 </div>
 
 <div class="background1">
-    <input type="text" maxlength="10" placeholder="水民词组">
-    <input type="text" maxlength="10" placeholder="幽灵词组">
+
+    <input id="civilian-word" type="text" maxlength="10" placeholder="水民词组">
+
+    <input id="kill-word" type="text" maxlength="10" placeholder="杀手词组">
 </div>
 
 <div class="background1" style="position: relative;z-index:0;">
@@ -49,7 +51,8 @@
         <span  id="add" class="plus" ><i></i></span>
     </div>
 </div>
-<button class="btn1" id="btn2">去发牌</button>
+    <input  id="btn2" class="btn1" type="button" onclick="save()" value="去发牌"/>
+
 </div>
 </body>
 <script type="text/javascript" src="js/js-task2.js"></script>

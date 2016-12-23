@@ -27,6 +27,7 @@ header{
     font-size: 0;
     background-color: rgb(41,189,224);
     padding: 20px 17px 10px 17px;
+    border: solid 1px #74d4eb;
 }
 header span{
     display: inline-block;
@@ -223,6 +224,7 @@ input[type=range]::-webkit-slider-thumb{
     font-size: 34px;
     color: white;
     background-color: #fab344;
+    cursor: pointer;
 }
 
 
