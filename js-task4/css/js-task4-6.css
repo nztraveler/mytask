@@ -1,0 +1,171 @@
+html {
+    font-size: 20px;
+}
+
+@media screen  and (max-width:479px) {
+    html {
+        font-size: 13px!important;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px!important;
+    }
+}
+
+@media screen and (min-width:640px)  {
+    html {
+        font-size: 20px!important;
+    }
+}
+
+body{
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+}
+
+.bg{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(41,189,224);
+}
+
+header{
+    width: 100%;
+    padding: 2% 0;
+    display: table;
+    border-bottom: solid 1px rgb(116,212,235);
+
+}
+.icon3{
+    display: table-cell;
+    width: 14%;
+    padding: 3.12% 0;
+    background-image: url(../images/icon3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.tablecell{
+    display: table-cell;
+    width: 72%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.7rem;
+    color: white;
+}
+header .icon4{
+    display: table-cell;
+    width: 14%;
+    background-image: url(../images/icon4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.victory{
+    text-align: center;
+    width: 17.6rem;
+    margin: 3.5% auto;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    line-height: 2.4rem;
+    font-size: 2.4rem;
+    color: white;
+    background-image: url(../images/icon5.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.p1{
+    width: 75%;
+    padding-right: 13%;
+    padding-left: 13%;
+    font-size: 1.65rem;
+    color: rgb(255,200,101);
+}
+.p2{
+    padding-left: 13%;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    color: white;
+}
+
+
+.day1{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 13%;
+    background-color: white;
+    border-top: solid 1px rgb(221,221,221);
+    border-bottom: solid 1px rgb(221,221,221);
+}
+.p3{
+    display: inline-block;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: rgb(81,81,81);
+}
+.p4{
+    display: inline-block;
+    padding-left: 45%;
+    font-size: 1rem;
+    color: rgb(199,199,199);
+}
+.p5{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: rgb(166,166,166);
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    bottom: 0;
+    padding: 4% 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(153,223,240,.65);
+}
+@media screen and (max-width:320px){
+    footer {
+        padding: 12.8px 0 ;
+    }
+}
+@media screen and (min-width:640px){
+    footer {
+        padding: 25px 0 ;
+    }
+}
+
+.button-b1{
+    float: left;
+    width: 42%;
+    height: 4rem;
+    margin-left: 4%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(246,111,111);
+    font-size: 1.8rem ;
+    font-family: "Microsoft YaHei";
+    color: white;
+}
+
+.button-b2{
+    float: right;
+    width: 42%;
+    height: 4rem;
+    margin-right: 4%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(251,180,53);
+    font-size: 1.8rem ;
+    font-family: "Microsoft YaHei";
+    color: white;
+}

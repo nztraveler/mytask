@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1，maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css" >
+    <link rel="stylesheet" type="text/css" href="css/js-task4-3.css">
+    <title>投票</title>
+</head>
+<body>
+
+<div class="bg">
+
+    <header>
+        <span class="icon1"></span>
+        <span class="tablecell">投票</span>
+        <span class="icon2"></span>
+    </header>
+
+    <div class="main">
+        <p>发言讨论结束，大家请投票</p>
+
+        <audio controls="controls" id="music" preload hidden src="music/Kent.mp3"></audio>
+        <button id="a" onclick="a();">
+            <div class="circle">
+                <div class="triangle-right"></div>
+            </div>
+        </button>
+        <script>
+            function a() {
+                var audio = document.getElementById('music');
+                if (audio.paused) {
+                    audio.play();//audio.play();// 播放
+                }
+                else {
+                    audio.pause();// 暂停
+                }
+            }
+        </script>
+    </div>
+    <div class="triangle-botom"></div>
+    <p class="p1">点击得票数最多人的头像</p>
+
+    <div class="vote">
+        <div class="container">
+            <div class="card">
+                <p class="p2">水民</p>
+                <p class="p3">1号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">水民</p>
+                <p class="p3">2号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">警察</p>
+                <p class="p3">3号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">法官</p>
+                <p class="p3">4号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">狙击手</p>
+                <p class="p3">5号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">医生</p>
+                <p class="p3">6号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">杀手</p>
+                <p class="p3">7号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">水民</p>
+                <p class="p3">8号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <p class="p2">水民</p>
+                <p class="p3">9号</p>
+            </div>
+            <ul>
+                <li class="icon4"></li>
+                <li class="icon5"></li>
+                <li class="icon6"></li>
+                <li class="icon7"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer style="position: static; border-top: none">
+    <a href="task6-2.html">
+        <div class="footer">投死</div>
+    </a>
+</footer>
+
+<footer>
+    <a href="task6-2.html">
+        <div class="footer">投死</div>
+    </a>
+</footer>
+
+
+</body>
+</html>

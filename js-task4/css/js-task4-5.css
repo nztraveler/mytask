@@ -1,0 +1,68 @@
+
+.background{
+    overflow: auto;
+    background-color: #29bde0;
+}
+
+.circle{
+    margin-top: 30px;
+    margin-right: 53px;
+    float: right;
+    position: relative;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border:solid 3px white;
+}
+.triangle-right{
+    position: absolute;
+    left: .9rem;
+    top: .65rem;
+    border-left: 1.25rem solid white;
+    border-top: .625rem solid transparent;
+    border-bottom: .625rem solid transparent;
+}
+.cry{
+    margin:60px auto;
+    width: 242px;
+    height: 242px;
+    border-radius: 50%;
+    border: solid white 8px;
+    background-color: #fbb435;
+    background-image: url("../images/boy-cry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.death-note{
+    padding-bottom: 65px;
+    text-align: center;
+    font-size: 27.5px;
+    line-height: 37px;
+    color: white;
+    border-bottom: solid 1px #87daee;
+}
+
+.last-words{
+    margin: 34px auto 0 auto;
+    width: 425px;
+    font-size: 34px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    background-color: #24a7c6;
+}
+.arrow{
+    display: block;
+    margin: 0 auto;
+}
+button{
+    display: block;
+    margin: 12px auto 60px auto ;
+    width: 485px;
+    line-height: 88px;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    background-color: #fab344;
+}

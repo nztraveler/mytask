@@ -1,0 +1,61 @@
+
+.container{
+    background-color: #29BDE0;
+}
+ul{
+    padding-top: 60px;
+    padding-bottom: 205px;
+    /*margin-left: 47px;*/
+    /*margin-right: -71px;*/
+    width: 643px;
+    font-size: 0;
+    height: 745px;
+    overflow: auto;
+}
+li{
+    margin: 0 24px 70px 47px;
+    /*float: left;*/
+    display: inline-block;
+    width: 126px;
+    height: 126px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 30px;
+    color: #fffdef;
+    background-image: url("../images/background.png");
+    border: solid 5px #fff;
+}
+
+
+li:before{
+    content: "平民";
+    display: block;
+    width: 126px;
+    line-height: 97px;
+    background-color: #75c4e8;
+    opacity: 0;
+}
+
+li:hover::before {
+    opacity: 1;
+}
+.btn{
+    position: fixed;
+    bottom: 0;
+    width: 640px;
+    background-color: #29BDE0;
+
+}
+button{
+
+    display: block;
+    margin: 55px auto ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 465px;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    background-color: #fab344;
+
+}
