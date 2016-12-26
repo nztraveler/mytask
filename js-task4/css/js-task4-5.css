@@ -34,15 +34,23 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.death-note{
+
+.girl-cry{
+    background-image: url("../images/girl-cry.png");
+}
+
+#death-note{
     padding-bottom: 65px;
+    min-height: 100px;
     text-align: center;
     font-size: 27.5px;
     line-height: 37px;
     color: white;
-    border-bottom: solid 1px #87daee;
+    /*border-bottom: solid 1px #87daee;*/
 }
-
+#change{
+    border-top: solid 1px #87daee;
+}
 .last-words{
     margin: 34px auto 0 auto;
     width: 425px;

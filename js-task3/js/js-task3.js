@@ -45,7 +45,10 @@ function onclick1() {
     }
     else {
         btn1.innerHTML="角色分配完毕";
-        alert("角色分配完毕，请将手机返还法官")
+        // alert("角色分配完毕，请将手机返还法官")
+        btn1.onclick=function () {
+            location.href="../js-task4/js-task4-1.html"
+        }
     }
     cover.style.visibility="hidden";
     show.style.visibility="visible";

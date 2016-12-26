@@ -129,10 +129,10 @@ button{
     width: auto;
     font-size: 1.2rem;
     color: white;
-
 }
 
 .vote{
+    min-height: 200px;
     overflow: hidden;
     padding-bottom: 110px;
     margin-bottom: -2px;
@@ -149,6 +149,7 @@ button{
     border: 0.25rem solid white;
     box-sizing: border-box;
     text-align: center;
+    cursor: pointer;
 }
 
 .p2{
@@ -158,6 +159,12 @@ button{
     line-height: 1.5rem;
     color: rgb(86,86,86);
     background-color: rgb(245,201,123);
+}
+.bgcolor-active{
+    background-color: rgb(244, 96, 80);
+}
+.bgcolor-dead{
+    background-color: rgb(209, 111, 102);
 }
 .p3{
     margin: 0;
@@ -200,6 +207,7 @@ footer{
     border-top: solid 1px white;
     text-align: center;
     background-color: rgb(41,189,224);
+    cursor: pointer;
 }
 
 .footer{

@@ -83,6 +83,7 @@ p img{
     font-size: 30px;
     color: #fff;
     background-color: #24a7c6;
+    cursor: pointer;
 }
  li:before{
      content: "";

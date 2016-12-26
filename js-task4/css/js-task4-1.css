@@ -27,8 +27,7 @@ li{
 }
 
 
-li:before{
-    content: "平民";
+.hover{
     display: block;
     width: 126px;
     line-height: 97px;
@@ -36,7 +35,7 @@ li:before{
     opacity: 0;
 }
 
-li:hover::before {
+li:hover .hover{
     opacity: 1;
 }
 .btn{
