@@ -1,0 +1,140 @@
+a{
+    color: inherit;
+    text-decoration:none;
+}
+
+html {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei" ,serif;
+}
+
+@media screen  and (max-width:479px) {
+    html {
+        font-size: 13px!important;
+    }
+}
+ 
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px!important;
+    }
+}
+ 
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px!important;
+    }
+}
+ 
+
+
+body{
+    margin: 0;
+}
+header{
+  width: 94%;
+  padding: 3.5% 3%;
+  background-color: rgb(41,189,224);
+}
+
+header img{
+  width: 5.5%;
+}
+.warp{
+    background-color: rgb(240,240,240);
+    padding: 4.6% 0;
+}
+
+
+
+.p1{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border: solid 1px rgb(201,201,201);
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 6rem;
+    color: rgb(154,154,154);
+
+    background-color: white;
+}
+
+.p2{
+    width: 100%;
+    /*使文本垂直居中*/
+    margin: 0 -6% 0 0;
+}
+.container{
+    text-align: center;
+    border:solid 1px rgb(201,201,201);
+    width: 90%;
+    margin: 4.2% auto;
+    background-color: white;
+}
+
+.p3{
+    margin: 0;
+    font-size: 1.9rem;
+    line-height: 4.5rem;
+    color: rgb(251,180,53);
+    border-bottom: solid 1px rgb(253,215,147);
+    background-color: white;
+}
+.p4{
+    width: 81%;
+    margin: 4.6% auto;
+    font-size: 1.6rem;
+    line-height: 6.75rem;
+    color: white;
+    background-color: rgb(105,209,233);
+}
+.p5{
+    width: 81%;
+    margin: auto;
+    font-size: 1.2rem;
+    color: rgb(120,120,120);
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+.block{
+    margin: 4.6% auto 4.6% 9.5%;
+    display: inline-block;
+}
+.round{
+    display: inline-block;
+    border-left: 24px solid rgb(251,180,53);
+    border-top: 24px solid transparent ;
+    border-bottom: 24px solid transparent ;
+    margin-right: 1.5%;
+}
+
+
+.circle{
+text-align: center;
+
+}
+.circle1{
+display: inline-block;
+
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background-color: rgb(105,209,233);
+}
+.circle2{
+display: inline-block;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background-color: rgb(240,240,240);
+}
+

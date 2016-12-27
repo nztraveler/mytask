@@ -1,0 +1,24 @@
+.ui {
+    height: 68.75rem;
+    background: url("../images/start.png") #29bde0 6.6875rem 6.875rem no-repeat;
+}
+
+.ui-text-group {
+    padding: 48.125rem 8.125rem 0;
+}
+.ui-text {
+    display: block;
+    float: left;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+.ui-dot {
+    float: left;
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #FFFFFF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 1.3125rem 1.25rem;
+}
