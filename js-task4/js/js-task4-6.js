@@ -45,7 +45,6 @@ for(i=0; i<arrDead.length;i++){
     }
 }
 
-
 var deadNote= document.getElementById("dead-note");
 
 if(arrDead.length%2==0){
