@@ -1,0 +1,127 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei" , serif;
+    min-width: 1100px;
+}
+/*清除input type=number下的小箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input{
+    font-family: "Microsoft YaHei" , serif;
+}
+.background{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    min-width: 1100px;
+    height: auto;
+}
+
+.main{
+    margin: 100px auto 0 auto;
+    /*padding-top: 300px;*/
+    width:80%;
+    max-width: 540px;
+    min-width: 300px;
+    background-color: transparent;
+    overflow: hidden;
+}
+.nav{
+    font-size: 0;
+}
+#login,#signUp {
+    width: 50%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: inherit;
+    line-height: 90px;
+    color: #03a9f4;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+#login{
+    background-color: #d0d3d8;
+}
+#signUp{
+    background-color: inherit;
+}
+#show-login{
+    overflow: hidden ;
+    background-color: #d0d3d8;
+}
+
+label{
+    display: block;
+    margin: 20px auto;
+    padding: 20px 0 ;
+    width: 435px;
+    background-color: #fff;
+    font-size: 0;
+}
+
+label img{
+
+    margin-right: 20px;
+    padding: 0 15px;
+    vertical-align: middle;
+    line-height: 18px;
+    border-right: 1px solid  #e8e8e8;
+}
+
+label input{
+    padding: 0;
+    width: 20em;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+}
+
+#submit1, #submit2{
+    display: block;
+    margin: 70px auto 30px auto;
+    width: 435px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #03a9f4;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+#show-signUp{
+    display: none;
+    overflow: hidden ;
+    background-color: #d0d3d8;
+}
+
+#captcha-img{
+    padding: 0;
+    margin-top: -14px;
+    margin-right: 20px;
+    float: right;
+    border: none;
+}
+#button-verify{
+    padding: 15px;
+    margin-top: -15px;
+    margin-right: 20px;
+    float: right;
+    width: 25%;
+}
+
+.input2{
+    padding-left: 20px;
+}
