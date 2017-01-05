@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../js-task5-local1/css/js-task5.css">
+    <link rel="stylesheet" href="css/js-task5.css">
     <title>one-login</title>
 </head>
 <body>
-<img class="background" src="../js-task5-local1/images/background.jpg">
+<img class="background" src="images/background.jpg">
 <div class=" main">
     <div class="nav">
         <button id="login">登录</button>
@@ -16,13 +16,13 @@
     <div id="show-login">
         <form >
             <label>
-                <img src="../js-task5-local1/images/username.png">
+                <img src="images/username.png">
                 <!--oninput函数，来确定最大字符为11个数字-->
                 <input type="number" id="mobile" name="mobile" placeholder="请输入手机号"  oninput="if(value.length>11)value=value.slice(0,11)">
             </label>
 
             <label >
-                <img src="../js-task5-local1/images/password.png">
+                <img src="images/password.png">
                 <input type="password" id="pwd" name="pwd" placeholder="请输入密码" minlength="6" maxlength="16">
             </label>
 
@@ -32,7 +32,7 @@
     <div id="show-signUp">
         <form >
             <label>
-                <img src="../js-task5-local1/images/username.png">
+                <img src="images/username.png">
                 <input type="number" id="mobile-signup" name="mobile" placeholder="请输入手机号"
                        oninput="if(value.length>11)value=value.slice(0,11)">
             </label>
@@ -48,7 +48,7 @@
             </label>
 
             <label >
-                <img src="../js-task5-local1/images/password.png">
+                <img src="images/password.png">
                 <input type="password" id="pwd-signup" name="pwd" placeholder="请输入由数字和字母组合的6-16位密码" minlength="6"  maxlength="16">
             </label>
 
