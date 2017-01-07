@@ -1,0 +1,104 @@
+
+
+
+.nav-left{
+    width: 250px;
+    text-align: center;
+    background-color: #2e394c;
+}
+.nav-icon{
+
+}
+.nav-icon2 {
+    vertical-align: text-top;
+    margin-right: 16px;
+}
+
+.nav-icon3{
+    float: right;
+    padding: 6px 0;
+}
+
+/*折叠导航栏bootstrap样式重置*/
+.panel-group .panel+.panel {
+    margin-top: 0;
+}
+
+.panel-default>.panel-heading {
+    background-color: transparent;
+}
+
+.panel-group .panel {
+    padding: 0;
+    border-radius: 0;
+}
+
+.panel{
+    border-top: solid #394356 1px ;
+    border-bottom: solid #212c31 1px ;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+.panel-line{
+    float: left;
+    display: inline-block;
+    margin-top: -12px;
+    width: 6px;
+    height: 40px;
+    background-color: #32c2e6;
+}
+.panel-title{
+    text-align: center
+}
+.panel-title>a{
+    display: inline-block;
+    width: 140px;
+    color: #b0bec5;
+    text-align: left;
+    text-decoration: none;
+    /*background-color: inherit;*/
+}
+
+
+.panel-group .panel-heading+.panel-collapse>.list-group {
+    border: none;
+}
+
+.list-group-item {
+    padding: 10px 0;
+    border: none;
+    background-color: inherit;
+}
+
+a.list-group-item {
+    color: #b0bec5;
+}
+.nav-p{
+    display: inline-block;
+    width: 68px;
+    text-align: left;
+}
+
+
+/*.panel-heading:focus, .panel-heading:hover {*/
+    /*background-color: #212c3e;*/
+/*}*/
+
+.panel-heading{
+    padding: 12px 0;
+}
+
+a.list-group-item:focus, a.list-group-item:hover, div.list-group-item:focus .panel-heading, div.list-group-item:hover .panel-heading {
+    color: #32c2e6;
+    background-color: #212c3e;
+    outline:none;
+}
+/*.list-group-item {*/
+    /*padding: 10px 0;*/
+/*}*/
+
+/*button.list-group-item:focus,button.list-group-item:hover{*/
+    /*!*background-color: inherit;*!*/
+    /*outline:none;*/
+/*}*/
