@@ -52,7 +52,7 @@ function callServer() {
     // var url = "121.41.226.206:10010/a/login?mobile=" + escape(mobile) + "&pwd=" + escape(pwd);
 
     // Open a connection to the server
-    xmlHttp.open("POST","/a/login",true);
+    xmlHttp.open("POST","/skill-ajax/a/login",true);
 // post发送方法，需要定义头部
     xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
@@ -95,7 +95,7 @@ function callServer2() {
 
     // post发送方法，需要定义头部
 
-    xmlHttp.open("POST"," /a/code/send",true);
+    xmlHttp.open("POST"," /skill-ajax/a/code/send",true);
 
     xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     // Open a connection to the server
@@ -135,7 +135,7 @@ function callServer3() {
 
     // post发送方法，需要定义头部
 
-    xmlHttp.open("POST","/a/user",true);
+    xmlHttp.open("POST","/skill-ajax/a/user",true);
 
     xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     // Open a connection to the server

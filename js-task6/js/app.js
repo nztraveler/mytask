@@ -4,7 +4,7 @@
 
 var myApp = angular.module("myApp", ['ui.router']);
 myApp.controller('myCtrl1', function ($scope,$http) {
-    $http.get('/students/')
+    $http.get('/student-ajax/students/')
         .success(function (response) {
             $scope.names = response.data;
             console.log($scope.names);
