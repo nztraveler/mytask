@@ -3,7 +3,13 @@
  */
 
 var myApp = angular.module("myApp", ['ui.router']);
-
+myApp.controller('myCtrl1', function ($scope,$http) {
+    $http.get('/students/')
+        .success(function (response) {
+            $scope.names = response.data;
+            console.log($scope.names);
+        });
+});
 myApp.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.when("", "/PageTab");
@@ -30,6 +36,15 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
     .state("PageTab.Page4", {
         url:"/Page4",
         templateUrl: "Page4.html"
-    });
+    })
+
+
 
 });
+
+
+
+
+
+
+
