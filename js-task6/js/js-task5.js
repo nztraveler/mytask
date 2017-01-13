@@ -36,7 +36,6 @@ function callServer() {
     var pwd = document.getElementById("pwd").value;
     // Only go on if there are values for both fields
 
-
     if (mobile.length != 11)
     {
         alert("请输入正确的手机号");
@@ -47,20 +46,15 @@ function callServer() {
         alert("请输入6-16位密码");
         return;
     }
-
     // Build the URL to connect to
-    // var url = "121.41.226.206:10010/a/login?mobile=" + escape(mobile) + "&pwd=" + escape(pwd);
-
     // Open a connection to the server
     xmlHttp.open("POST","/skill-ajax/a/login",true);
 // post发送方法，需要定义头部
     xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-
     // 发送数据
     xmlHttp.send("mobile=" + mobile+ "&pwd=" + pwd);
-
     // Setup a function for the server to run when it's done
-    xmlHttp.onreadystatechange = updatePage;
+    xmlHttp.onreadystatechange = logIn;
 }
 
 var submit1 = document.getElementById("submit1")
@@ -70,12 +64,21 @@ function updatePage() {
     if (xmlHttp.readyState == 4) {
         var response = xmlHttp.responseText;
         var str = JSON.parse(response);
+        logCode = str.code;
         alert(str.message);
         // submit.value = response;
         console.log(response);
         console.log(str);
+
     }
 }
+function logIn() {
+    updatePage();
+    if (logCode == 0) {
+        location.href = "main.html"
+    }
+}
+
 // 登录页验证结束
 
 

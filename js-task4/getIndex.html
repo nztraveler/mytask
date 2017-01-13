@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p class="identity">水民</p>
+    <p class="num">1号</p>
+</div>
+<div class="box">
+    <p class="identity">杀手</p>
+    <p class="num">2号</p>
+</div>
+<div class="box">
+    <p class="identity">水民</p>
+    <p class="num">3号</p>
+</div>
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+    //JQ
+    //    $(".box").click(function () {
+    //        alert($(this).index());
+    //        alert($(this).find('.identity').text());
+    //        alert($(this).find('.num').text());
+    //    });
+
+    //原生
+    var box = document.getElementsByClassName('box');
+    for (var i = 0; i < box.length; i++) {
+        box[i].index = i;
+        box[i].onclick = function () {
+            alert(this.index);
+            console.log(this.id);
+            console.log(this.className);
+            alert(parseInt(this.children[1].innerText) - 1);
+            alert(this.children[0].innerText);
+            alert(this.children[1].innerText);
+
+        }
+    }
+
+</script>
+</body>
+
+
+</html>

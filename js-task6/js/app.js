@@ -2,31 +2,42 @@
  * Created by CT on 2017/1/4.
  */
 
-var myApp = angular.module("myApp", ['ui.router']);
-myApp.controller('myCtrl1', function ($scope,$http) {
-    $http.get('/student-ajax/students/')
-        .success(function (response) {
-            $scope.names = response.data;
-            console.log($scope.names);
-        });
-});
-myApp.config(function ($stateProvider, $urlRouterProvider) {
+var myApp = angular.module("myApp", ['ui.router', 'ui.bootstrap', "oc.lazyLoad"]);
+
+myApp.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
+
+    var _lazyLoad = function (loaded) {
+        return function ($ocLazyLoad) {
+            return $ocLazyLoad.load(loaded, {serie: true});
+        }
+    };
 
     $urlRouterProvider.when("", "/PageTab");
     $stateProvider
+
         .state("PageTab", {
             url: "/PageTab",
-    templateUrl: "page-tab.html"
+            templateUrl: "page-tab.html",
+            resolve: {
+                loadMyFile: _lazyLoad(
+                    ['css/page-tab.css']
+                )
+            }
 })
-
         .state("PageTab.Page1", {
             url:"/Page1",
-    templateUrl: "one-login.html"
+            templateUrl: "Page1.html"
 })
 
         .state("PageTab.Page2", {
             url:"/Page2",
-    templateUrl: "Page2.html"
+            templateUrl: "Page2.html",
+            // controller:'myCtrl1',  //把controller注入页面
+            resolve: {
+                loadMyFile: _lazyLoad(
+                    ['js/Page2.js', 'css/page2.css']
+                )
+            }
 })
 
         .state("PageTab.Page3", {
