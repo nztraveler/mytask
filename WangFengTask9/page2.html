@@ -1,0 +1,92 @@
+<div class="page2-content">
+    <div class="page2-listBox">
+        <p class="page2-listTitle" ng-click="Submit()">查询已报名弟子</p>
+        <div class="page2-add" style="overflow:hidden">
+            <div class="col-md-3 col-sm-6 col-xs-6 s-center">
+                <label for="type">类型</label>
+                <select id="type" data-ng-model="selectType" data-ng-options="x.value as x.name for x in type">
+
+                </select>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 s-center">
+                <label for="talent">资质</label>
+                <select id="talent" data-ng-model="selectTalent" data-ng-options="x.value as x.name for x in talent">
+
+                </select>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 s-center">
+                <label for="level">修行等级</label>
+                <select id="level" data-ng-model="selectLevel" data-ng-options="x.value as x.name for x in level">
+
+                </select>
+            </div>
+
+            <div class="col-md-2 col-sm-6 col-xs-3 center">
+                <button class="btn btn-primary" type="button" id="search" data-ng-click="request()">搜索</button>
+            </div>
+
+            <!--<p>-->
+            <!--{{ selectType }}-->
+            <!--{{ selectTalent }}-->
+            <!--{{ selectLevel }}-->
+            <!--</p>-->
+
+        </div>
+        <p class="content-title">列表管理</p>
+        <div>
+
+            <table class="list-top table table-striped table-bordered table-hover">
+                <thead>
+                <tr class="info">
+                    <!--<th><input type="checkbox" ng-model="master" class="allchoosed ng-pristine ng-untouched ng-valid ng-empty">-->
+                    <!--</th>-->
+                    <th>学员ID</th>
+                    <th>姓名</th>
+                    <th>修真类型</th>
+                    <th>报名时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr
+                        ng-repeat="user in userList">
+                    <!--| filter:search!| filter:searchTalent | filter:searchLevel-->
+                    <!--<td><input type="checkbox"></td>-->
+                    <td>{{user.name}}</td>
+                    <td>{{ user.introduce }}</td>
+                    <td>{{ user.skillName }}</td>
+                    <td>{{ user.resource }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success btn-xs" ng-click="edit(user.id)">编辑</button>
+                        <button type="button" class="btn btn-primary btn-xs" ng-click="del()">删除</button>
+                    </td>
+                </tr>
+                <tr>
+
+                    <!-- -->
+                    <!--<button class="pre btn " data-ng-disabled="preState" data-ng-click="prePage()">&lt;</button>-->
+                    <!--<label class="page-bar">第<span class="page-num ng-binding" data-ng-bind="page">2</span>页</label>-->
+                    <!--<button class="next btn" data-ng-disabled="nextState" data-ng-click="nextPage()">&gt;</button>-->
+
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>我的长度是{{userTotal}}</p>
+
+        <!--<pagination    total="{{userTotal}}"></pagination>-->
+
+
+        <button ng-click="left()" ng-dis><</button>
+        第 {{page}} 页
+        <button ng-click="right()">></button>
+
+
+    </div>
+</div>
+
+<script>
+    var aaa = document.getElementsByTagName("tr");
+    console.log(aaa);
+</script>

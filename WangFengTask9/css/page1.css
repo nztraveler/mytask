@@ -1,0 +1,62 @@
+
+.page1-content {
+    background: url(../img/body-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /*display: table-cell;*/
+    vertical-align: middle;
+    text-align: center;
+}
+
+.page1-content, .page2-content {
+    background-color: #d0d4d9;
+}
+
+.page1-content h1, .page2-content h1 {
+    color: #0099ff;
+    font-size: 2.5rem;
+    padding: 3% 0;
+}
+
+/*几个按钮组件的样式*/
+.page1-content form, .page2-content form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.page1-btn1, .page1-btn2, .page2-btn1, .page2-btn2 {
+    background-color: #fff;
+    padding: 3% 0;
+    margin-bottom: 4%;
+}
+
+.page1-btn1 img, .page1-btn2 img, .page2-btn1 img, .page2-btn2 img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.page1-btn1 input, .page1-btn2 input, .page2-btn1 input, .page2-btn2 input {
+    vertical-align: middle;
+    outline: none;
+    border: 0;
+    width: 77%;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    padding: 0 4%;
+    border-left: 1px solid #ccc;
+}
+
+.page1-sub, .page2-sub {
+    border: 0;
+    background: #03a9f4;
+    color: #fff;
+    width: 80%;
+    font-size: 1.8rem;
+    padding: 3% 0;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    margin: 5% 0;
+    outline: 0;
+    cursor: pointer;
+}

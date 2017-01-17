@@ -1,0 +1,176 @@
+<script>
+
+</script>
+
+<div>
+    <form ng-submit="submitForm()" name="myForm">
+
+        <div class="form-group">
+            <label>姓名：</label>
+            <!--<pre>合法：{{ signUpForm.username }}</pre>-->
+            <input ng-model="userdata.username" name="username" type="text"
+                   ng-pattern="/[^u4E00-u9FA5]/g"
+                   ng-minlength="2" ng-maxlength="5"
+                   autocomplete="off"
+                   ng-required="true"
+                   class="form-control" placeholder="姓名">
+            <p class="alert alert-danger help-block"
+               ng-show="myForm.username.$dirty && myForm.username.$error.minlength">用户名长度应在2到5位</p>
+            <p class="alert alert-danger help-block"
+               ng-show="myForm.username.$dirty && myForm.username.$error.maxlength">用户名长度应在2到5位</p>
+            <p class="alert alert-danger help-block" ng-show="myForm.username.$dirty && myForm.username.$error.pattern">
+                只能输入中文，谢谢！</p>
+        </div>
+        <!--{{ myForm.username.$error }}-->
+
+        <div class="form-group">
+            <label class="title">QQ：</label>
+            <input ng-model="userdata.qq" class="form-control " name="qq" type="text"
+                   ng-pattern="/\d/"
+                   ng-minlength="6" ng-maxlength="15"
+                   autocomplete="off" placeholder="qq"
+                   required>
+            <p class="alert alert-danger help-block" ng-show="myForm.qq.$dirty && myForm.qq.$error.maxlength ">
+                qq长度在6到15位以内的数字</p>
+            <p class="alert alert-danger help-block" ng-show="myForm.qq.$dirty && myForm.qq.$error.minlength  ">
+                qq长度在6到15位以内的数字</p>
+            <p class="alert alert-danger help-block" ng-show="myForm.qq.$dirty && myForm.qq.$error.pattern  ">
+                只能输入数字</p>
+        </div>
+        <!--{{ myForm.qq.$error }}-->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">修真类型</label>
+            <div class="col-sm-12">
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="1"/> CSS
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="2"/> JS
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="3"/> JAVA
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="4"/> 运维
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="5"/> DBA
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="6"/> 产品
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="7"/> IOS
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="type" ng-model="userdata.type" value="8"/> ANDROID
+                </label>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-12 control-label">毕业院校：</label>
+            <input class="form-control " name="school" type="text"
+                   ng-pattern="/[^u4E00-u9FA5]/g"
+                   ng-minlength="5" ng-maxlength="15"
+                   autocomplete="off"
+                   ng-required="true"
+                   ng-model="userdata.school">
+            <p class="alert alert-danger help-block" ng-show="myForm.school.$dirty && myForm.school.$error.minlength">
+                用户名长度应在5到15位</p>
+            <p class="alert alert-danger help-block" ng-show="myForm.school.$dirty && myForm.school.$error.maxlength">
+                用户名长度应在5到15位</p>
+            <p class="alert alert-danger help-block" ng-show="myForm.school.$dirty && myForm.school.$error.pattern">
+                只能输入中文，谢谢！</p>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="form-group">
+            <label class="col-sm-12 control-label">资质</label>
+            <div class="col-sm-12">
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="talent" ng-model="userdata.talent" value="1"/> 学霸
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="talent" ng-model="userdata.talent" value="2"/> 学渣
+                </label>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">修行等级</label>
+            <div class="col-sm-12">
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="level" ng-model="userdata.level" value="1"/> 0基础
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="level" ng-model="userdata.level" value="2"/> 修行3个月以内
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="level" ng-model="userdata.level" value="3"/> 修行6个月以内
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="level" ng-model="userdata.level" value="4"/> 修行1年以内
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="level" ng-model="userdata.level" value="5"/> 修行3年以内
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-required="true" name="level" ng-model="userdata.level" value="6"/> 修行3年以上
+                </label>
+
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <label class="col-sm-12 control-label" style="clear:both;">预计入学时间：</label>
+        <div class="col-sm-12 ruxue">
+
+            <datetimepicker dateID="timepicker" ng-model="jointime" format="Y/m/d"
+                            class="form-control"></datetimepicker>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-xs-12 control-label">修行立愿：</label>
+            <textarea class="col-sm-12" style="width:100%;" ng-model="userdata.wish" ng-required="true"></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default" ng-disabled="myForm.$invalid " ng-click="addStudent()">
+                    添加
+                </button>
+                <button type="reset" class="btn btn-default" ng-click="reset()">重置</button>
+            </div>
+        </div>
+
+
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
