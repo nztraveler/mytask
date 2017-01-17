@@ -8,20 +8,33 @@ myApp.controller('myCtrl1', ['$scope', '$filter', '$http', '$log', function ($sc
     $scope.currentPage = 1;//初始化当前页
     $scope.maxSize = 5;// 可选页数范围，中间页数的数量
     $scope.maxPerPage = 10;//每页数量
-
-    $http.get('/a/document/search/query?type=1&size=268')
+    // 获取后台数据
+    $http.get('/skill-ajax/a/occupation/document/1?type=1')
         .success(function (response) {
-            // 数据储存在names中
-            $scope.names = response.data;
-            console.log(response);
-            console.log($scope.names);
-            //  提取返回数据的文档总数和每页数量,
+            // 后台返回总数据量
+            $scope.num = response.total;
+            // 嵌套在获取一次数据，把总数据量上传
+            $http.get('/skill-ajax/a/occupation/document/1?type=1&size=' + $scope.num)
+                .success(function (response) {
+                    $scope.names = response.data;
+                    console.log(response);
+                    console.log($scope.names);
+                    // 数据储存在names和filteredList中
+                    $scope.filteredList = $scope.names;
 
-            $scope.$watchCollection('search', function (newValue) {
-                $scope.filteredList = $filter('filter')($scope.names, newValue);
-            });
+                });
         });
+// 点击搜索事件
+    $scope.searchClick = function (newValue) {
+// 把newValue作为过滤条件参数传入，实现过滤函数
+        $scope.filteredList = $filter('filter')($scope.names, newValue);
+    };
 
+
+    // $scope.$watchCollection('search', function (newValue) {
+    //     $scope.filteredList = $filter('filter')($scope.names, newValue);
+    // });
+}]);
 
     // $scope.users = [
     //     {"id": 1, "name": "AAA BBB"},
@@ -116,9 +129,6 @@ myApp.controller('myCtrl1', ['$scope', '$filter', '$http', '$log', function ($sc
     //
     // ];
     // 'search.skillName','search.name' ,'search.authorName'
-
-
-}]);
 
 
 //

@@ -18,12 +18,17 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) 
         .state("PageTab", {
             url: "/PageTab",
             templateUrl: "page-tab.html",
+            // controller: function ($state) {
+            //     $state.go('PageTab.Page1');//默认显示第一个tab
+            // },
             resolve: {
                 loadMyFile: _lazyLoad(
                     ['css/page-tab.css']
                 )
             }
 })
+
+
         .state("PageTab.Page1", {
             url:"/Page1",
             templateUrl: "Page1.html"
@@ -31,22 +36,32 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) 
 
         .state("PageTab.Page2", {
             url:"/Page2",
-            templateUrl: "Page2.html",
+            templateUrl: "Page2-online.html",
             // controller:'myCtrl1',  //把controller注入页面
             resolve: {
                 loadMyFile: _lazyLoad(
-                    ['js/Page2.js', 'css/page2.css']
+                    ['js/Page2-online.js', 'css/page2.css']
                 )
             }
 })
 
         .state("PageTab.Page3", {
             url:"/Page3",
-    templateUrl: "Page3.html"
+    templateUrl: "Page3.html",
+            resolve: {
+                loadMyFile: _lazyLoad(
+                    ['js/Page3.js', 'css/page3.css']
+                )
+            }
 })
     .state("PageTab.Page4", {
         url:"/Page4",
-        templateUrl: "Page4.html"
+        templateUrl: "Page4.html",
+        resolve: {
+            loadMyFile: _lazyLoad(
+                ['js/Page4.js', 'css/page4.css']
+            )
+        }
     })
 
 

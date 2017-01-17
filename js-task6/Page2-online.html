@@ -5,33 +5,21 @@
     <div class="ma18">
         <div class="mb18 bg-color-grey3 of-auto bba2 pt30">
             <div class="ml33 mb18 pull-left">
-                <span class="mr18">技能</span>
-                <input type="text" ng-model="search.skillName">
-            </div>
-            <div class="ml33 mb18 pull-left">
-                <span class="mr18">文档名</span>
-                <input type="text" ng-model="search.name">
-            </div>
-            <div class="ml33 mb18 pull-left">
-                <span class="mr18">上传者</span>
-                <input type="text" ng-model="search.authorName">
-                <!--ng-model="search.authorName"-->
+                <span class="mr18">类型</span>
+                <input type="number" ng-model="search" oninput="if(value.length>1)value=value.slice(0,1)">
+                <span>请输入1~8的数字</span>
             </div>
             <!--<div class="ml33 mb18 pull-left">-->
-            <!--<span class="mr18">客户姓名</span>-->
-            <!--<input type="text">-->
+            <!--<span class="mr18">文档名</span>-->
+            <!--<input type="text" ng-model="search.name">-->
             <!--</div>-->
             <!--<div class="ml33 mb18 pull-left">-->
-            <!--<span class="mr18">客户姓名</span>-->
-            <!--<input type="text">-->
+            <!--<span class="mr18">上传者</span>-->
+            <!--<input type="text" ng-model="search.authorName">-->
             <!--</div>-->
 
-            <!--<div class="ml33 mb18 pull-left">-->
-            <!--<span class="mr18">客户姓名</span>-->
-            <!--<input type="text">-->
-            <!--</div>-->
 
-            <button ng-click="searchClick(search)" type="button" class="btn btn-info pull-right btn4 mb30 mr33 ml200">
+            <button ng-click="searchClick()" type="button" class="btn btn-info pull-right btn4 mb30 mr33 ml200">
                 <span class="glyphicon glyphicon-search"></span>搜索
             </button>
         </div>
@@ -54,7 +42,7 @@
                 </thead>
 
                 <tbody>
-                <tr ng-repeat="x in filteredList | limitTo : maxPerPage : (currentPage - 1) * maxPerPage">
+                <tr ng-repeat="x in names">
                     <!--获取数组下标生成序号-->
                     <td>{{$index + 1}}</td>
                     <td> {{x.skillName}}</td>
@@ -80,7 +68,7 @@
         </div>
     </div>
     <nav class="pull-right mr18">
-        <ul class="pagination-sm" uib-pagination total-items="filteredList.length" ng-model="currentPage"
+        <ul class="pagination-sm" uib-pagination total-items="num" ng-model="currentPage"
             max-size="maxSize" items-per-page="maxPerPage" boundary-links="true" force-ellipses="true"
             previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></ul>
         <!--<ul class="pagination"  ng-repeat="x in pageArr">-->

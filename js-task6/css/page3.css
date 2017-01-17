@@ -1,0 +1,36 @@
+
+.uploader-box {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.uploader-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.uploader-box p, .uploader-box span {
+    position: absolute;
+    margin: 0;
+    padding-top: 45%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*display:none;*/
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+
