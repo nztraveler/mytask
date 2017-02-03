@@ -1,6 +1,12 @@
+.main{
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
 
 .uploader-box {
     position: relative;
+    margin: 30px auto;
     width: 130px;
     height: 130px;
     overflow: hidden;

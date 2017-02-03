@@ -1,47 +1,91 @@
-<div>
-
-    <div class="input-group">
-        <span class="tablecell">昵称</span>
-        <input type="text" class="form-control" placeholder="用户名" >
+<div class="row main"  ng-controller="DataCtrl as vm">
+    <form  name="dataForm">
+    <div class="form-group">
+        <lable class="col-xs-2 tablecell ">昵称</lable>
+        <div class="col-xs-10">
+        <input type="text" class="form-control" name="nick" ng-model="nick" maxlength="15" required >
+            <div class="error" ng-show="dataForm.nick.$dirty && dataForm.nick.$invalid">
+                <small class="error" ng-show="dataForm.nick.$error.required">请输入昵称</small>
+            </div>
+        </div>
     </div>
-    <div class="input-group">
-        <span class="tablecell">性别</span>
+
+    <div class="form-group">
+        <lable class="col-xs-2 tablecell">性别</lable>
+        <div class="col-xs-10">
         <select class="form-control">
             <option>男</option>
             <option>女</option>
         </select>
-    </div>
-    <div class="input-group">
-        <span class="tablecell">生日</span>
-        <input type="text" class="form-control" placeholder="1988" >
-        <span class="tablecell">年</span>
-        <input type="text" class="form-control" placeholder="8" >
-        <span class="tablecell">月</span>
-        <input type="text" class="form-control" placeholder="29" >
-        <span class="tablecell">日</span>
-    </div>
-    <div class="input-group">
-        <span class="tablecell">Q Q</span>
-        <input type="text" class="form-control"  >
-    </div>
-    <div class="input-group">
-        <span class="tablecell">院校</span>
-        <input type="text" class="form-control" placeholder="清华大学" >
-    </div>
-    <div class="input-group">
-        <span class="tablecell">城市</span>
-        <input type="text" class="form-control" placeholder="省份" >
-        <span class="tablecell"> </span>
-        <input type="text" class="form-control" placeholder="城市" >
-
-    </div>
-    <div class="input-group">
-        <span class="tablecell">签名</span>
-        <textarea  class="form-control"></textarea>
+        </div>
     </div>
 
+    <div class="form-group">
+        <lable class="col-xs-2 tablecell">生日</lable>
+        <div class="col-xs-10">
+        <input date-dropdown ng-model="vm.userData.birthday" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <lable class="col-xs-2 tablecell">Q Q</lable>
+        <div class="col-xs-10">
+        <input type="text" class="form-control" name="qq" ng-model="vm.userData.qq"
+               ng-pattern="/^\d{4,11}$/" required >
+            <div class="error" ng-show="dataForm.qq.$dirty && dataForm.qq.$invalid">
+                <small class="error" ng-show="dataForm.qq.$error.pattern">请输入4-11位数字</small>
+                </div>
+            </div>
+    </div>
+
+        <div class="form-group">
+            <lable class="col-xs-2 tablecell">院校</lable>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" name="school" ng-model="vm.userData.school" ng-pattern="/[^u4E00-u9FA5]/g"
+                       ng-maxlength=20 required>
+                <div class="error" ng-show="dataForm.school.$dirty && dataForm.school.$invalid">
+                    <small class="error" ng-show="dataForm.school.$error.maxlength">请输入不超过20个字符</small>
+                    <small class="error" ng-show="dataForm.school.$error.pattern">请输入中文</small>
+                </div>
+            </div>
+        </div>
+
+    <div class="form-group" >
+        <lable class="col-xs-2 tablecell">城市</lable>
+        <div class="col-xs-10">
+    <div class="row">
+        <div class="col-xs-6">
+        <select name="province" class="form-control " ng-init="province.id='0'" ng-model="province.id" ng-change="vm.provinceChange(province.id);city.id='0';" ng-options="id as name for (id,name) in vm.provinceArr" ></select>
+        </div>
+        <div class="col-xs-6">
+        <select name="city" class="form-control" ng-init="city.id='0'" ng-model="city.id" ng-change="vm.cityChange(city.id);" ng-options="id as name for (id,name) in vm.getCityArr" ></select>
+            </div>
+    </div>
+        </div>
+    </div>
 
 
+    <div class="form-group">
+        <lable class="col-xs-2 tablecell">签名</lable>
+        <div class="col-xs-10">
+            <textarea type="text" class="form-control" name="sign" ng-model="vm.userData.sign"
+                                           ng-maxlength=20 required>
+ </textarea>
+            <div class="error" ng-show="dataForm.sign.$dirty && dataForm.sign.$invalid">
+                <small class="error" ng-show="dataForm.sign.$error.maxlength">请输入不超过20个字符</small>
+            </div>
+            </div>
+    </div>
 
 
+    <div class="form-group">
+        <div class="col-xs-2 col-xs-offset-2">
+            <button type="submit"class="btn btn-orange" ng-click="vm.save()" ng-disabled="dataForm.$invalid">保 存</button>
+        </div>
+        <div class="col-xs-2">
+            <button type="reset" class="btn btn-default" ng-click="reset()">取消</button>
+        </div>
+    </div>
+</form>
 </div>
+

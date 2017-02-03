@@ -18,9 +18,9 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) 
         .state("PageTab", {
             url: "/PageTab",
             templateUrl: "page-tab.html",
-            // controller: function ($state) {
-            //     $state.go('PageTab.Page1');//默认显示第一个tab
-            // },
+            controller: function ($state) {
+                $state.go('PageTab.Page1');//默认显示第一个tab
+            },
             resolve: {
                 loadMyFile: _lazyLoad(
                     ['css/page-tab.css']
@@ -57,10 +57,17 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) 
     .state("PageTab.Page4", {
         url:"/Page4",
         templateUrl: "Page4.html",
+        // controller: 'DataCtrl as vm',
         resolve: {
-            loadMyFile: _lazyLoad(
-                ['js/Page4.js', 'css/page4.css']
-            )
+            loadMyFile: _lazyLoad([
+                'js/Page4.js',
+                'js/city.js',
+                'css/page4.css',
+                // 'js/constant.js',
+                // 'js/dataCtrl.js',
+                'js/dateDropdown.js',
+                // 'js/simpleUpload.js'
+                ])
         }
     })
 

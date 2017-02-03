@@ -1,0 +1,166 @@
+<div class="content blank">
+    <h5 class="title-blank-padding text-muted">
+        个人资料
+    </h5>
+
+    <br/><br/>
+    <!-- 编辑状态  -->
+    <!--<div class="row" ng-show="vm.editable">-->
+        <!--<div class="col-sm-2 col-xs-offset-1">-->
+            <!--<simple-upload-book name="img" ng-model="$parent.img" required></simple-upload-book>-->
+        <!--</div>-->
+        <div class="col-sm-7 col-xs-offset-1 col-sm-offset-0">
+            <form class="form-horizontal" name="dataForm">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">昵称</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nick" ng-model="vm.userData.nick" maxlength="15" required>
+                        <div class="error" ng-show="dataForm.nick.$dirty && dataForm.nick.$invalid">
+                            <small class="error" ng-show="dataForm.nick.$error.required">请输入昵称</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">性别</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" ng-model="vm.userData.sex">
+                            <option value="1">男</option>
+                            <option value="0">女</option>
+                            <option value="2">保密</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">生日</label>
+                    <div class="col-sm-10">
+                        <input date-dropdown ng-model="vm.userData.birthday"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">ＱＱ</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="qq" ng-model="vm.userData.qq"
+                               ng-pattern="/^\d{4,11}$/">
+                        <div class="error" ng-show="dataForm.qq.$dirty && dataForm.qq.$invalid">
+                            <small class="error" ng-show="dataForm.qq.$error.pattern">请输入4-11位数字</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">院校</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="school" ng-model="vm.userData.school"
+                               ng-maxlength=20>
+                        <div class="error" ng-show="dataForm.school.$dirty && dataForm.school.$invalid">
+                            <small class="error" ng-show="dataForm.school.$error.maxlength">请输入不超过20个字符</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">城市</label>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select ng-change="vm.changeSelect()" class="form-control"
+                                        ng-model="vm.userData.province">
+                                    <option value="">请选择</option>
+                                    <option ng-repeat="li in vm.provinceList track by $index"
+                                            ng-selected="vm.userData.province == li.ProID" ng-value="li.ProID">
+                                        {{li.ProName}}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="form-control" ng-model="vm.userData.city">
+                                    <option value="">请选择</option>
+                                    <option ng-repeat="li in vm.cityList track by $index"
+                                            ng-if="li.ProID == vm.userData.province"
+                                            ng-selected="vm.userData.city == li.CityID" ng-model="svm.gao"
+                                            ng-value="li.CityID">{{li.CityName}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">签名</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" name="sign" ng-model="vm.userData.sign"
+                                  maxlength=20></textarea>
+                        <div class="error" ng-show="dataForm.sign.$dirty && dataForm.sign.$invalid">
+                            <small class="error" ng-show="dataForm.sign.$error.maxlength">请输入不超过20个字符</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 col-md-offset-2">
+                        <button class="btn btn-orange" ng-click="vm.save()" ng-disabled="dataForm.$invalid">保 存</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-default" ng-click="vm.cancel()">取消</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <!--</div>-->
+
+    <!-- 浏览状态 -->
+    <!--<div class="row" ng-show="!vm.editable">-->
+        <!--<div class="col-sm-2 col-xs-offset-1">-->
+            <!--&lt;!&ndash;<img ng-src="{{vm.userData.thumb}}" class="img-circle"/>&ndash;&gt;-->
+            <!--<div class="uploader-box-img" ng-style="{'background-image':'url(' + vm.userData.thumb + ')'}"></div>-->
+        <!--</div>-->
+        <!--<div class="col-sm-7 col-xs-offset-1 col-sm-offset-0">-->
+            <!--<form class="form-horizontal">-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label">昵称</label>-->
+                    <!--<div class="col-sm-10 form-control-static">-->
+                        <!--{{vm.userData.nick}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label">性别</label>-->
+                    <!--<div class="col-sm-10 form-control-static">-->
+                        <!--{{vm.userData.sex | sexFilter}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label">年龄</label>-->
+                    <!--<div class="col-sm-10 form-control-static">-->
+                        <!--{{vm.userData.birthday | ageFilter}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label">ＱＱ</label>-->
+                    <!--<div class="col-sm-10 form-control-static">-->
+                        <!--{{vm.userData.qq}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label">院校</label>-->
+                    <!--<div class="col-sm-10 form-control-static">-->
+                        <!--{{vm.userData.school}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label">城市</label>-->
+                    <!--<div class="col-sm-10 form-control-static">-->
+                        <!--{{vm.userData.province | provinceFilter}} {{vm.userData.city | cityFilter}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-sm-2 control-label">签名</label>-->
+                    <!--<div class="col-sm-10 form-control-static">-->
+                        <!--{{vm.userData.sign}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<div class="col-sm-10 col-sm-offset-2">-->
+                        <!--<button class="btn btn-orange" ng-click="vm.edit()" ng-if="vm.isSelf">编 辑</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
