@@ -1,20 +1,22 @@
 
-body{
+body {
     max-width: 640px;
     margin: 0 auto;
     font-family: "SimHei";
 }
-ul,li,p,button,input{
+
+ul, li, p, button, input {
     padding: 0;
     margin: 0;
     border: none;
     outline: none;
 }
-ul,li{
+
+ul, li {
     list-style: none;
 }
 
-button{
+button {
     background-color: transparent;
     border: none;
     outline: none;

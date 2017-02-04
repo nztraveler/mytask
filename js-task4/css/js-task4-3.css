@@ -1,4 +1,4 @@
-html{
+html {
     font-size: 20px;
 }
 
@@ -8,48 +8,61 @@ body {
     min-width: 320px;
 }
 
-@media screen  and (max-width:479px) {
+@media screen  and (max-width: 479px) {
     html {
         font-size: 12px;
     }
 }
 
-@media screen and (min-width:480px) and (max-width:639px) {
+@media screen and (min-width: 480px) and (max-width: 639px) {
     html {
         font-size: 16px;
     }
 }
 
-@media screen and (min-width:640px)  {
+@media screen and (min-width: 640px) {
     html {
         font-size: 20px;
     }
 }
 
-
-.bg{
+.bg {
     width: 100%;
     margin: 0;
-    background-color: rgb(41,189,224);
+    background-color: rgb(41, 189, 224);
 }
 
-.icon4{ background-image: url(../images/CssGaga.png);
-    background-position: 0 0; background-size: 400% ;}
-.icon5{ background-image: url(../images/CssGaga.png);
-    background-position: 33% 0; background-size: 400% ;}
-.icon6{ background-image: url(../images/CssGaga.png);
-    background-position: 68% 0; background-size: 400% ;}
-.icon7{ background-image: url(../images/CssGaga.png);
-    background-position: 100% 0; background-size: 400% ;}
+.icon4 {
+    background-image: url(../images/CssGaga.png);
+    background-position: 0 0;
+    background-size: 400%;
+}
 
+.icon5 {
+    background-image: url(../images/CssGaga.png);
+    background-position: 33% 0;
+    background-size: 400%;
+}
 
-header{
+.icon6 {
+    background-image: url(../images/CssGaga.png);
+    background-position: 68% 0;
+    background-size: 400%;
+}
+
+.icon7 {
+    background-image: url(../images/CssGaga.png);
+    background-position: 100% 0;
+    background-size: 400%;
+}
+
+header {
     width: 100%;
     padding: 2% 0;
     display: table;
 }
 
-header .icon1{
+header .icon1 {
     display: table-cell;
     width: 14%;
     padding: 3.12% 0;
@@ -59,7 +72,7 @@ header .icon1{
     background-size: contain;
 }
 
-.tablecell{
+.tablecell {
     display: table-cell;
     width: 72%;
     text-align: center;
@@ -67,7 +80,8 @@ header .icon1{
     font-size: 1.7rem;
     color: white;
 }
-header .icon2{
+
+header .icon2 {
     display: table-cell;
     width: 14%;
     background-image: url(../images/icon2.png);
@@ -76,20 +90,20 @@ header .icon2{
     background-position: center center;
 }
 
-.main{
+.main {
     position: relative;
     width: 100%;
-    background-color: rgb(185,233,245);
+    background-color: rgb(185, 233, 245);
 }
 
-.main p{
+.main p {
     font-size: 1.3rem;
-    color: rgb(70,70,70);
+    color: rgb(70, 70, 70);
     padding: 4.6% 0 4.6% 7.2%;
     margin: 0;
 }
 
-button{
+button {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -100,14 +114,16 @@ button{
     cursor: pointer;
     outline: none;
 }
-.circle{
+
+.circle {
     position: relative;
     width: 2.6rem;
     height: 2.6rem;
     border-radius: 50%;
-    background-color: rgb(251,180,53);
+    background-color: rgb(251, 180, 53);
 }
-.triangle-right{
+
+.triangle-right {
     position: absolute;
     left: .9rem;
     top: .65rem;
@@ -116,22 +132,22 @@ button{
     border-bottom: .625rem solid transparent;
 }
 
-.triangle-botom{
+.triangle-botom {
     width: 0;
     margin-left: 11%;
-    border-top: .75rem solid rgb(185,233,245);
+    border-top: .75rem solid rgb(185, 233, 245);
     border-left: .375rem solid transparent;
     border-right: .375rem solid transparent;
 }
 
-.p1{
+.p1 {
     margin: 2.3% 0 6.25% 11%;
     width: auto;
     font-size: 1.2rem;
     color: white;
 }
 
-.vote{
+.vote {
     min-height: 200px;
     overflow: hidden;
     padding-bottom: 110px;
@@ -139,12 +155,13 @@ button{
 
 }
 
-.container{
+.container {
     float: left;
     width: 22%;
     margin-left: 8.5%;
 }
-.card{
+
+.card {
     width: 100%;
     border: 0.25rem solid white;
     box-sizing: border-box;
@@ -152,38 +169,43 @@ button{
     cursor: pointer;
 }
 
-.p2{
+.p2 {
     margin: 0;
     padding: 28% 0;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    color: rgb(86,86,86);
-    background-color: rgb(245,201,123);
+    color: rgb(86, 86, 86);
+    background-color: rgb(245, 201, 123);
 }
-.bgcolor-active{
+
+.bgcolor-active {
     background-color: rgb(244, 96, 80);
 }
-.bgcolor-dead{
+
+.bgcolor-dead {
     background-color: rgb(209, 111, 102);
 }
-.p3{
+
+.p3 {
     margin: 0;
     line-height: 1.25rem;
     font-size: 1.135rem;
-    color: rgb(225,225,225);
-    background-color: rgb(131,176,154);
+    color: rgb(225, 225, 225);
+    background-color: rgb(131, 176, 154);
 }
 
-ul{
+ul {
     width: 100%;
     padding: 16% 0;
-    margin:0 0 25% ;
+    margin: 0 0 25%;
     opacity: 0;
 }
 
-.container:hover ul{opacity: 1;}
+.container:hover ul {
+    opacity: 1;
+}
 
-li{
+li {
     float: left;
     width: 23%;
     padding: 11.5% 0;
@@ -193,11 +215,11 @@ li{
     background-color: white;
 }
 
-ul .icon7{
+ul .icon7 {
     margin: 0;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -206,29 +228,31 @@ footer{
     padding: 3% 0;
     border-top: solid 1px white;
     text-align: center;
-    background-color: rgb(41,189,224);
+    background-color: rgb(41, 189, 224);
     cursor: pointer;
 }
 
-.footer{
+.footer {
     width: 80%;
     padding: 3% 0;
     margin: 0 10%;
     font-size: 2rem;
     color: white;
-    background-color: rgb(251,180,53);
+    background-color: rgb(251, 180, 53);
 }
-@media screen  and (max-width:320px) {
+
+@media screen  and (max-width: 320px) {
     footer {
         padding: 9.6px 0;
     }
 }
-@media screen  and (min-width:640px) {
+
+@media screen  and (min-width: 640px) {
     footer {
         padding: 19.2px 0;
     }
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }

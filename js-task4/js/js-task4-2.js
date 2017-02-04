@@ -6,7 +6,7 @@ var str = localStorage.getItem("1");
 
 var save = JSON.parse(str);
 var day = save.date;
-if (day!=undefined){
-    document.getElementById("day").innerText=day;
+if (day != undefined) {
+    document.getElementById("day").innerText = day;
 }
 

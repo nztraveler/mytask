@@ -1,8 +1,9 @@
 
-.container{
+.container {
     background-color: #29BDE0;
 }
-ul{
+
+ul {
     padding-top: 60px;
     padding-bottom: 205px;
     /*margin-left: 47px;*/
@@ -12,7 +13,8 @@ ul{
     height: 745px;
     overflow: auto;
 }
-li{
+
+li {
     margin: 0 24px 70px 47px;
     /*float: left;*/
     display: inline-block;
@@ -26,8 +28,7 @@ li{
     border: solid 5px #fff;
 }
 
-
-.hover{
+.hover {
     display: block;
     width: 126px;
     line-height: 97px;
@@ -35,20 +36,22 @@ li{
     opacity: 0;
 }
 
-li:hover .hover{
+li:hover .hover {
     opacity: 1;
 }
-.btn{
+
+.btn {
     position: fixed;
     bottom: 0;
     width: 640px;
     background-color: #29BDE0;
 
 }
-button{
+
+button {
 
     display: block;
-    margin: 55px auto ;
+    margin: 55px auto;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 465px;

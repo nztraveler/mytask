@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     align-items: center;
     font-size: 0;
@@ -6,7 +6,8 @@ header{
     padding: 20px 17px 10px 17px;
     border: solid 1px #74d4eb;
 }
-header span{
+
+header span {
     display: inline-block;
     width: 545px;
     color: white;

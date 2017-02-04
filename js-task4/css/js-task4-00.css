@@ -6,12 +6,14 @@
 .ui-text-group {
     padding: 48.125rem 8.125rem 0;
 }
+
 .ui-text {
     display: block;
     float: left;
     font-size: 2.5rem;
     color: #FFFFFF;
 }
+
 .ui-dot {
     float: left;
     width: 0.625rem;
