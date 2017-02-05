@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example - ui-router</title>
+
+    <script src="//cdn.bootcss.com/angular.js/1.3.0/angular.js"></script>
+    <script src="//cdn.bootcss.com/angular-ui-router/1.0.0-rc.1/angular-ui-router.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body ng-app="myExample" ng-controller="myCtrl">
+<div>
+    <!-- ui-sref 會幫忙產生對應的 href -->
+    <a ui-sref="home" ui-sref-active="active">主頁</a>
+
+    <!-- 可以 pass parameters -->
+    <a ui-sref="about({'id':1})" ui-sref-active="active">介紹1</a>
+
+    <!-- 也可以直接定義 href 的方式，只是就沒用到優秀的 ui-router state 特性-->
+    <a href="#/about/2">介紹2</a>
+
+    <!-- bind ngClick + $state.go 也可以 work, 只是這樣不會自動產生 href -->
+    <a ng-click="$state.go('about', {'id': 3})">介紹3</a>
+
+    <!-- 不用 a tag 也可以 work, 可是就不會自動產生 href -->
+    <span ui-sref="about({'id':4})" ui-sref-active="active">介紹4</span>
+</div>
+<div ui-view></div>
+</body>
+</html>
